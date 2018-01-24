@@ -9,9 +9,13 @@ Jade Shi
 ## Dependencies
 Python: tensorflow, numpy, pickle
 
-ViennaRNA 1.8.5: Add the included /SentRNA/util/ViennaRNA-1.8.5/Progs directory to the $PATH environment variable
+ViennaRNA (https://www.tbi.univie.ac.at/RNA/):
+This program uses the RNAfold function from ViennaRNA 1.8.5, but the more updated RNAplot function from ViennaRNA 2.3.3 (both
+included). Add the following directory paths to your $PATH environment variable:
+1. /SentRNA/util/ViennaRNA-1.8.5/Progs (for RNAfold)
+2. /SentRNA/util/ViennaRNA-1.8.5/Progs/rnaplot (for RNAplot)
 
-## Benchmarks:
+## Benchmarks
 Eterna100 (http://www.eternagame.org/web/blog/6136054/)
 
 80 / 100 across 163 models trained (all located in models/trained_models)
