@@ -18,18 +18,18 @@ Eterna100 (http://www.eternagame.org/web/blog/6136054/)
 
 ## Usage instructions:
 ### 1. Training
-An example template for the full process of training, validation, testing, and refinement is included: /SentRNA/test_pipeline.sh. Training a model is handled by the first command in the file.
+An example template for the full process of training, validation, testing, and refinement is included: /SentRNA/test_pipeline.py. Training a model is handled by the first command in the file.
 
 The dataset used to train the model is a custom-compiled list of player solutions across 724 unique target structures (puzzles). Currently, by design only puzzles 1 to 722 are used for training, whereas puzzle 722 and 724 are reserved for initial validation and testing.
 
 The trained model is saved in the automatically generated "test" directory.
 
 ### 2. Testing
-Testing a model is handled by the second command in the /SentRNA/test_pipeline.sh file. This takes the trained model and has it predict solutions for all 100 puzzles in the Eterna100 given their target structur
+Testing a model is handled by the second command in the /SentRNA/test_pipeline.py file. This takes the trained model and has it predict solutions for all 100 puzzles in the Eterna100 given their target structur
 es. Results will be stored in the automatically generated "test_results" directory.
 
 ### 3. Refinement
-Refinement is handled by the third command in the /SentRNA/test_pipeline.sh file. This will take the initially predicted solution stored in "test_results" for each puzzle and attempt to refine it using an adaptive walk algorithm. Results will be saved in the automatically generated "refined" directory.
+Refinement is handled by the third command in the /SentRNA/test_pipeline.py file. This will take the initially predicted solution stored in "test_results" for each puzzle and attempt to refine it using an adaptive walk algorithm. Results will be saved in the automatically generated "refined" directory.
 
 ### Example refinement
 An example of a trained model and its performance on one of the Eterna100 puzzles, Kyurem 7, is included. To use, copy everything from the /SentRNA/kyurem7_trained directory into /SentRNA and run "test_kyurem7.py". The script will first predict an initial solution to Kyurem 7 using the trained model, followed by 100 rounds of refinement. The refinement efficacy outputted at the end represents the fraction of trials i
