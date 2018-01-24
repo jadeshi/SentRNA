@@ -1,0 +1,10 @@
+(lp0
+(lp1
+S'Mutated chicken feet'
+p2
+aS'.......((.((.((...)).((...))...)))).((.((.((...)).((...))...)))).((.((.((...)).((...))...)))).......'
+p3
+aS'AAAAAAACCAGCACCAUAGGACCAUAGGAAAGCGGACCAGCACCAUAGGACCAUAGGAAAGCGGACCAGCACCAUAGGACCAUAGGAAAGCGGAAAAAAU'
+p4
+aF0.76
+aa.

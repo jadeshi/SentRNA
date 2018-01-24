@@ -1,0 +1,2174 @@
+(dp0
+S'"Project : 2 multiloops with neck and branches 4nt long and tetraloops"'
+p1
+I16
+sS'"Project : Hairpins: Hexaloop"'
+p2
+I23
+sS'"[Gene Synthesizer] Level 8 of 14"'
+p3
+I6774
+sS'"Project : 3-Branched Multiloop: Lonely Tetraloop"'
+p4
+I10
+sS'"Project : Isolated Closing Pairs 3"'
+p5
+I18
+sS'"Project : comparison series: 10-15"'
+p6
+I12
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 24"'
+p7
+I1
+sS'"Investigation of Alternative Human tRNA Structures - Shape 31"'
+p8
+I1
+sS'"Project : Rattus norvegicus miRNA"'
+p9
+I4
+sS'"14-stack tetraloop hairpin"'
+p10
+I5
+sS'"[RNA Polymerase] Level 7 of 9"'
+p11
+I1139
+sS'"Project : Genetic Sequences: Solving Many Small Loops "'
+p12
+I13
+sS'"Project : T3-3 N5 L2-2 S3 E4"'
+p13
+I14
+sS'"Project : Turtle project Ml 1-1-1-1'
+p14
+I6
+sS'"Project : All red and blue"'
+p15
+I16
+sS'"[Thermocycler] Level 5 of 11"'
+p16
+I3573
+sS'"Example project for renewal 2 - Shape 3"'
+p17
+I1
+sS'"Sarcin-ricin vs internal loops (redo) - Shape 2"'
+p18
+I2
+sS'"Project : comparison series: 15-5"'
+p19
+I11
+sS'"Project : Internal Loops: 6-3"'
+p20
+I21
+sS'"Alternative structure space for human tRNAs - Shape 20"'
+p21
+I2
+sS'"Alternative structure space for human tRNAs - Shape 36"'
+p22
+I1
+sS'"Project : Bulge test"'
+p23
+I17
+sS'"Project : 3-Branched Multiloop: Lonely Triloops"'
+p24
+I17
+sS'"Project : Turtle project Ml 2-2-2-2-2-2'
+p25
+I3
+sS'"Project : comparison series: 6-2"'
+p26
+I12
+sS'"Project : Stack With Multiple 2-nt Bulges (1B)"'
+p27
+I9
+sS'"[RNA Polymerase] Level 5 of 9"'
+p28
+I1188
+sS'"Project : Stack With Multiple 3-nt Bulges (1B)"'
+p29
+I8
+sS'"Project : janderson\'s LR12"'
+p30
+I11
+sS'"Project : Natural RNAs: Barley Yellow Dwarf Virus 5\' UTR (1)"'
+p31
+I9
+sS'"Project : comparison series: NNF 2x 1-1 NEAR"'
+p32
+I9
+sS'""Sea Turtle" for New Players"'
+p33
+I1
+sS'"Project : Turtle project Ml 3-3-3-3'
+p34
+I6
+sS'"Project : comparison series: NNF x3 2-2 near"'
+p35
+I3
+sS'"Project : Multiloop: 3 Branches'
+p36
+I1
+sS'"Project : Genetic Sequences: Solving Multiloops Reposted"'
+p37
+I11
+sS'"Apical Loop Comparison - Dissimilar Stem Sequences - Shape 0"'
+p38
+I1
+sS'"Alternative structure space for human tRNAs - Shape 3"'
+p39
+I4
+sS'"Project : comparison series: ML-I 2-2-2 x2 3NTS"'
+p40
+I7
+sS'"[Thermocycler] Level 2 of 11"'
+p41
+I3956
+sS'"Project : GU-pin shape test"'
+p42
+I12
+sS'"Project : Natural RNAs: Barley Yellow Dwarf Virus 5\' UTR (3)"'
+p43
+I9
+sS'"Project : chain length and loop size series 1-4"'
+p44
+I7
+sS'"Project : comparison series: 9-2"'
+p45
+I10
+sS'"Project :  comparison series: NNF x3 3-3 near"'
+p46
+I6
+sS'"Project : comparison series: ML-I 10-1-1"'
+p47
+I15
+sS'"Project : Turtle project Ml 3-3-3-3 with 3 legs (2NT)'
+p48
+I6
+sS'"Alternative structure space for human tRNAs - Shape 8"'
+p49
+I1
+sS'"Hairpin Loop Comparison Pilot - Stem Comparison Tests"'
+p50
+I1
+sS'"Project : Hard Lab Fragments: Making it Up As I Go Multiloop"'
+p51
+I14
+sS'"Improve "The Branches NUPACK bot design 2" with "Simplified Berex Test" strategy"'
+p52
+I18
+sS'"Project : 30 Nucleotide Loop 3 - Bulge Internal Loop"'
+p53
+I13
+sS'"Improve "The Branches NUPACK bot design 8" with "Numbers of yellow nucleotides pr. length of string" strategy"'
+p54
+I17
+sS'"Project : comparison series: 1-15"'
+p55
+I19
+sS'"Project : Small Sided"'
+p56
+I12
+sS'"Project : Turtle project Ml 2-2-2-2-2 with 4 legs (2NT)'
+p57
+I6
+sS'"test - Shape 7"'
+p58
+I1
+sS'"[Gene Synthesizer] Level 12 of 14"'
+p59
+I5533
+sS'"Project : Natural RNAs: Hop Stunt Viroid"'
+p60
+I12
+sS'"Project : comparison series: ML-I 2-2-6"'
+p61
+I12
+sS'"Project : comparison series: 1-1"'
+p62
+I23
+sS'"P4P6 Group 1 Intron"'
+p63
+I1
+sS'"[Microfluidic Chip] Level 4 of 7"'
+p64
+I823
+sS'"[Next-Generation Sequencer] Level 11 of 11"'
+p65
+I1504
+sS'"Project : Fractal RNA"'
+p66
+I16
+sS'"Project : comparison series: 2-9"'
+p67
+I18
+sS'"Poly (A) Structure Analysis 3 - Shape 5"'
+p68
+I1
+sS'"Project : comparison series: 15-7"'
+p69
+I11
+sS'"Project : comparison series: 15-12"'
+p70
+I10
+sS'"Improve "Bulged Star NUPACK design 02" with "Repetition" strategy"'
+p71
+I13
+sS'"test - Shape 19"'
+p72
+I5
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 10"'
+p73
+I2
+sS'"Project : loop test 4"'
+p74
+I11
+sS'"Project : Quadloop Mania 1"'
+p75
+I10
+sS'"Project : Turtle project Ml 1-1-1 with 3 legs (2NT)'
+p76
+I6
+sS'"Alternative structure space for human tRNAs - Shape 10"'
+p77
+I1
+sS'"Project : Isolated Base Pairs: Adjacent 2-1 Loops (2)"'
+p78
+I6
+sS'"Hairpin Loop Comparison Pilot - Shape 4"'
+p79
+I3
+sS'"Project : Close Multiloops (1)"'
+p80
+I13
+sS'"Poly (A) Structure Analysis 3 - Shape 0"'
+p81
+I5
+sS'"Project : comparison series: 1-8"'
+p82
+I6
+sS'"Project : comparison series: 4-15"'
+p83
+I12
+sS'"Project : Isolated Base Pairs: 1-1 Loop Between 1-nt Bulges (3)"'
+p84
+I13
+sS'"[Gene Synthesizer] Level 2 of 14"'
+p85
+I9900
+sS'"Project : Headless Bug Arm 2"'
+p86
+I18
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 5"'
+p87
+I2
+sS'"Project : Genetic Sequences: Soving Smaller Loops"'
+p88
+I27
+sS'"Project : comparison series: 2-2"'
+p89
+I20
+sS'"Investigation of Alternative Human tRNA Structures - Shape 26"'
+p90
+I1
+sS'"Project :  comparison series: ML-I 2-2-2 7'
+p91
+I7
+sS'"Project : Turtle project Ml 1-1-1'
+p92
+I6
+sS'"Project : Multiloop Isolated Closing Pairs"'
+p93
+I22
+sS'"Project : Variations on a Theme S2E4 .1"'
+p94
+I10
+sS'"Project : comparison series: B 0-4"'
+p95
+I15
+sS'"Project : comparison series: ML-I 7-4-7"'
+p96
+I9
+sS'"Stanford Switch Puzzle"'
+p97
+I23
+sS'"Project : Mat - comparison series: 3-2 - D1"'
+p98
+I9
+sS'"Investigation of Alternative Human tRNA Structures - Shape 34"'
+p99
+I2
+sS'"Project : Isolated Base Pairs: 1-1 Loop Adjacent to 1-nt Bulge (1)"'
+p100
+I10
+sS'"Project : comparison series: NNF x3 3-3 fused"'
+p101
+I9
+sS'"Project : Alternative Mismatches"'
+p102
+I24
+sS'"Project : Triloop Forked FMN"'
+p103
+I14
+sS'"Project : comparison series: 8-1"'
+p104
+I7
+sS'"Improve "Bulged Star NUPACK design 02" with "Numbers of yellow nucleotides pr. length of string" strategy"'
+p105
+I18
+sS'"Effects of nucleotide exposure on global RNA elements. - Shape 7"'
+p106
+I3
+sS'"test - Shape 1"'
+p107
+I1
+sS'"Alternative structure space for human tRNAs - Shape 0"'
+p108
+I7
+sS'"Project : Turtle project Ml 0-0-0'
+p109
+I6
+sS'"Project : comparison series: 4-4"'
+p110
+I19
+sS'"Project : Upside down T"'
+p111
+I16
+sS'"Alternative structure space for human tRNAs - Shape 9"'
+p112
+I1
+sS'"Project : Genetic Sequences: Solving Puzzles with Short Stacks Between Loops"'
+p113
+I11
+sS'"Alternative structure space for human tRNAs - Shape 32"'
+p114
+I2
+sS'"Project : comparison series: 14-15"'
+p115
+I11
+sS'"Investigation of Alternative Human tRNA Structures - Shape 21"'
+p116
+I1
+sS'"test - Shape 14"'
+p117
+I1
+sS'"Project : comparison series:"'
+p118
+I19
+sS'"Project : comparison series: NNF 2x 2-2 next"'
+p119
+I6
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 21"'
+p120
+I1
+sS'"Poly (A) Structure Analysis 2"'
+p121
+I1
+sS'"Project : Isolated Base Pairs: 1-1 Loop Adjacent to 1-nt Bulge (3)"'
+p122
+I9
+sS'"Test - Shape 0"'
+p123
+I1
+sS'"TEBOWNED mutation - BH"'
+p124
+I126
+sS'"Project : Turtle project Ml 4-4-4-'
+p125
+I6
+sS'"Project : comparison series: 6-6"'
+p126
+I17
+sS'"Effects of nucleotide exposure on global RNA elements. - Shape 3"'
+p127
+I1
+sS'"Project : Turtle project Ml 1-1-1-1. 2x4 NT L'
+p128
+I6
+sS'"Project : Stack With Multiple 3-nt Bulges (1A)"'
+p129
+I7
+sS'"Project : TetraLoop GNRA - Just One Thing"'
+p130
+I11
+sS'"Project : Multiloop: 4 Branches Separated by Single Unpaired Bases"'
+p131
+I10
+sS'"[Gene Synthesizer] Level 5 of 14"'
+p132
+I8561
+sS'"Investigation of Alternative Human tRNA Structures - Shape 1"'
+p133
+I1
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 18"'
+p134
+I1
+sS'"Project : FMN-RNA aptamer complex lab "'
+p135
+I18
+sS'"Project : comparison series: 12-12"'
+p136
+I10
+sS'"Project : Bulge Sampler: 2-nt"'
+p137
+I10
+sS'"Project : Blade"'
+p138
+I16
+sS'"Project : comparison series: 13-13"'
+p139
+I10
+sS'"Investigation of Alternative Human tRNA Structures - Shape 6"'
+p140
+I1
+sS'"Project : comparison series: 12-15"'
+p141
+I12
+sS'"Alternative structure space for human tRNAs - Shape 25"'
+p142
+I3
+sS'"Project : comparison series: NNF 3x 4-4"'
+p143
+I6
+sS'"Multistate RNA Sequence - 4 Residues"'
+p144
+I1
+sS'"Project : Coaxial Stacking: Two Stacks (ML 2-0-2-0)"'
+p145
+I9
+sS'"Sarcin-ricin vs internal loops (redo) - Shape 3"'
+p146
+I10
+sS'"Project : Natural RNAs: Barley Yellow Dwarf Virus 5\' UTR (2)"'
+p147
+I8
+sS'"Project : comparison series: 1-3"'
+p148
+I10
+sS'"test - Shape 13"'
+p149
+I1
+sS'"Project : Ameoba Campaign"'
+p150
+I15
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 0"'
+p151
+I1
+sS'"Project : comparison series: B 2-0"'
+p152
+I12
+sS'"Nando\'s Zippers - Shape 5"'
+p153
+I1
+sS'"Project : Turtle project Ml 0-0-0-0-0'
+p154
+I8
+sS'"Project : comparison series: NNF  2x 3-3 next"'
+p155
+I9
+sS'"Project : Hard Lab Fragments: Kudzu Arm"'
+p156
+I15
+sS'"Project : comparison series: Octaloops"'
+p157
+I9
+sS'"Project : One Step at a Time (2)"'
+p158
+I16
+sS'"Project : Saccharomyces Cerevisiae Loop Structure"'
+p159
+I15
+sS'"MS2 control ON"'
+p160
+I1
+sS'"Project : Adenine Reduction"'
+p161
+I17
+sS'"Investigation of Alternative Human tRNA Structures - Shape 12"'
+p162
+I1
+sS'"Project : Thicker Zigzag"'
+p163
+I25
+sS'"Project : Genetic Sequences: Curve"'
+p164
+I5
+sS'"Project : Bumps"'
+p165
+I12
+sS'"Project : comparison series: B 4-0"'
+p166
+I12
+sS'"Project : Turtle project Ml 4-4-4 with 2 legs (2NT)'
+p167
+I6
+sS'"[Gene Synthesizer] Level 10 of 14"'
+p168
+I4469
+sS'"Project : Natural RNAs: Iron Response Element"'
+p169
+I1
+sS'"Project : Testing various loop designs"'
+p170
+I8
+sS'"Poly (A) Structure Analysis 3 - Shape 1"'
+p171
+I3
+sS'"Reproducibility Lab 2 - Shape 19"'
+p172
+I1
+sS'"Project : Coaxial Stacking: Two Stacks (3B)"'
+p173
+I6
+sS'"Project : Quadloop Mania 5"'
+p174
+I12
+sS'"Project : Tetraloop Library (3): Modified Closing Pair"'
+p175
+I9
+sS'"Project : Test of RNAfold (4)"'
+p176
+I8
+sS'"Project : comparison series: B 0-1"'
+p177
+I17
+sS'"Project : Genetic Sequences: Solving Paired 1-1 and 2-2 Loops"'
+p178
+I13
+sS'"Project : I Dont Know"'
+p179
+I8
+sS'"Project : Headless Bug Arm 6"'
+p180
+I10
+sS'"Project : Hooked"'
+p181
+I26
+sS'"Project : comparison series: ML-I 4-7-1"'
+p182
+I15
+sS'"Project : Experimental Shape - 1"'
+p183
+I17
+sS'"Project : Isolated Base Pairs: 1-1 Loop Between 1-nt Bulges (2)"'
+p184
+I12
+sS'"Project : comparison series: 1-4"'
+p185
+I9
+sS'"Alternative structure space for human tRNAs - Shape 4"'
+p186
+I4
+sS'"Project : comparison series: ML-I 6-6-6"'
+p187
+I13
+sS'"Project : comparison series: ML-I 10-3-3"'
+p188
+I12
+sS'"Project : comparison series: 15-11"'
+p189
+I10
+sS'"Project : comparison series: 15-8"'
+p190
+I11
+sS'"Project : Chain length and loop size series 1-10"'
+p191
+I10
+sS'"Project : comparison series: 2-15"'
+p192
+I17
+sS'"Project : Turtle project Ml 7-7-7'
+p193
+I6
+sS'"Project : Isolated Base Pairs: 1-1 Loop Adjacent to 1-nt Bulge (2)"'
+p194
+I9
+sS'"test - Shape 5"'
+p195
+I1
+sS'"hHAR1"'
+p196
+I2
+sS'"Project : Uracil Reduction"'
+p197
+I18
+sS'"Project : Large Isolated Hairpin"'
+p198
+I19
+sS'"Project : Example project 2"'
+p199
+I31
+sS'"Investigation of Alternative Human tRNA Structures - Shape 22"'
+p200
+I1
+sS'"Project : Coaxial Stacking: ??? (1-0-1-0 Multiloop)"'
+p201
+I9
+sS'"Project : comparison series: 2-7"'
+p202
+I12
+sS'"Hairpin Loop Comparison Pilot - Shape 1"'
+p203
+I3
+sS'"Project : loop test 3"'
+p204
+I5
+sS'"Sarcin-ricin vs boosted internal loops - Shape 4"'
+p205
+I2
+sS'"[RNA Polymerase] Level 1 of 9"'
+p206
+I1391
+sS'"Project : comparison series: NNF 2x 4-4 near"'
+p207
+I9
+sS'"Project : comparison series: NNF x3 1-1 near"'
+p208
+I7
+sS'"Sarcin-ricin vs boosted internal loops - Shape 3"'
+p209
+I2
+sS'"Project : Coaxial Stacking: ??? (0-1-0-1 Multiloop)"'
+p210
+I7
+sS'"Project : Turtle project Ml 5-5-5-5'
+p211
+I6
+sS'"Project : Sock"'
+p212
+I16
+sS'"Project : comparison series: ML-I 3-3-10"'
+p213
+I12
+sS'"Project : Turtle project Ml 4-4-4-4 with 3 legs (2NT)'
+p214
+I6
+sS'"Investigation of Alternative Human tRNA Structures - Shape 30"'
+p215
+I1
+sS'"[Gene Synthesizer] Level 13 of 14"'
+p216
+I4767
+sS'"Project : Turtle project Ml 7-7-7 with 2 legs (2NT)'
+p217
+I8
+sS'"Project : comparison series: Heptaloop"'
+p218
+I12
+sS'"Project : Genetic Sequences: Solving Hexagons without Stacks"'
+p219
+I28
+sS'"Project : comparison series: NNF 3x 4-4 next"'
+p220
+I6
+sS'"Project : comparison series: 8-2"'
+p221
+I11
+sS'"[Thermocycler] Level 10 of 11"'
+p222
+I3191
+sS'"[Gene Synthesizer] Level 1 of 14"'
+p223
+I11420
+sS'"Investigation of Alternative Human tRNA Structures - Shape 37"'
+p224
+I1
+sS'"Alternative structure space for human tRNAs - Shape 28"'
+p225
+I3
+sS'"[Microfluidic Chip] Level 5 of 7"'
+p226
+I816
+sS'"Alternative structure space for human tRNAs - Shape 31"'
+p227
+I2
+sS'"Project : comparison series: 7-2"'
+p228
+I10
+sS'"Project : comparison series: NNF 2x 2-2 near"'
+p229
+I6
+sS'"Project : Stack With Multiple 1-1 Loops (3)"'
+p230
+I10
+sS'"[Gene Synthesizer] Level 6 of 14"'
+p231
+I8067
+sS'"Project : comparison series: Hexaloop  "'
+p232
+I13
+sS'"[Thermocycler] Level 11 of 11"'
+p233
+I2795
+sS'"Improve "The Branches NUPACK bot design 8" with "Repetition" strategy"'
+p234
+I13
+sS'"Project : comparison series: ML-I 5-8-5"'
+p235
+I12
+sS'"Alternative structure space for human tRNAs - Shape 35"'
+p236
+I2
+sS'"Investigation of Alternative Human tRNA Structures - Shape 27"'
+p237
+I1
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 1"'
+p238
+I2
+sS'"cHAR1"'
+p239
+I2
+sS'"Project : Coaxial Stacking: Two Stacks (0-2-0-2 Multiloop)"'
+p240
+I9
+sS'"Project : comparison series: NNF 3x 4-4 fused"'
+p241
+I6
+sS'"Project : Turtle project Ml 5-5-5-5 with 3 legs (2NT)'
+p242
+I6
+sS'"TR1B1 - Shape 3"'
+p243
+I1
+sS'"Project : Crossroads test"'
+p244
+I18
+sS'"Project : 3-4 and 1-2 loops"'
+p245
+I12
+sS'"Hairpin Loop Comparison Pilot - Shape 3"'
+p246
+I3
+sS'"Project : Isolated Base Pairs: 1-1 Loop Between 1-nt Bulges (4)"'
+p247
+I12
+sS'"Investigation of Alternative Human tRNA Structures - Shape 2"'
+p248
+I1
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 6"'
+p249
+I2
+sS'"Project : comparison series: 7N ML-I 1-1-1 IL 3-3"'
+p250
+I15
+sS'"P4P6 Scrambled"'
+p251
+I2
+sS'"Sarcin-ricin vs internal loops (redo) - Shape 0"'
+p252
+I2
+sS'"Project : comparison series: NNF 2x 6-6 fused"'
+p253
+I16
+sS'"Project : comparison series: ML-I 1-1-4"'
+p254
+I12
+sS'"Project : Tobramycin Aptamer"'
+p255
+I22
+sS'"Project : Turtle project Ml 6-6-6'
+p256
+I6
+sS'"Project : comparison series: 5-15"'
+p257
+I15
+sS'"Multistate RNA Sequence - 2 Residues"'
+p258
+I1
+sS'"Project : comparison series: 9-1"'
+p259
+I7
+sS'"Project : Test of RNAfold (5)"'
+p260
+I9
+sS'"Project : Sharklike V-2 (SHAPE data Exp-2)"'
+p261
+I13
+sS'"[Thermocycler] Level 9 of 11"'
+p262
+I3207
+sS'"Nando\'s Zippers - Shape 0"'
+p263
+I1
+sS'"Improve "The Branches NUPACK bot design 2" with "Direction of GC pairs + neck area" strategy"'
+p264
+I19
+sS'"Project : Quadloop Mania 8"'
+p265
+I15
+sS'"Project : comparison series: 11-11"'
+p266
+I13
+sS'"Project : Two bulges and a 1-2 loop (reverse)"'
+p267
+I10
+sS'"Project : Turtle project Ml 5-5-5'
+p268
+I6
+sS'"Investigation of Alternative Human tRNA Structures - Shape 11"'
+p269
+I1
+sS'"Project : comparison series: 7-15"'
+p270
+I11
+sS'"Project : 3-Branched Multiloop: Triloop with Short Stack"'
+p271
+I10
+sS'"Project : chain lenth and loop size series 1-9"'
+p272
+I8
+sS'"Project : comparison series: ML-I 1-9-1"'
+p273
+I9
+sS'"Project : Neck Length 2 - 4 branch multiloop"'
+p274
+I17
+sS'"Project : Turtle project Ml 4-4-4-4-4'
+p275
+I3
+sS'"Project : (..(.(((...))).(((...))).)..)"'
+p276
+I9
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 4"'
+p277
+I1
+sS'"Poly (A) Structure Analysis 3 - Shape 6"'
+p278
+I2
+sS'"Project : comparison series: 15-4"'
+p279
+I14
+sS'"Alternative structure space for human tRNAs - Shape 13"'
+p280
+I1
+sS'"Project : comparison series: NNF 2x 5-5 fused"'
+p281
+I9
+sS'"Test LAB - Shape 0"'
+p282
+I1
+sS'"Project : Fisker - 2-2 loop energy challenge"'
+p283
+I23
+sS'"[Next-Generation Sequencer] Level 7 of 11"'
+p284
+I2036
+sS'"Project : Test of RNAfold (2)"'
+p285
+I11
+sS'"Project : comparison series: ML-I 2-2-2 x2 10NTS"'
+p286
+I8
+sS'"Project : Turtle project Ml 11-11-11'
+p287
+I7
+sS'"Project : Headless Bug Arm 3"'
+p288
+I14
+sS'"Project : comparison series: 1-7"'
+p289
+I6
+sS'"Project : 30 Nucleotide Loop 2 - Asymmetric Internal Loop"'
+p290
+I19
+sS'"[Gene Synthesizer] Level 11 of 14"'
+p291
+I4397
+sS'"Project : comparison series: ML-I 1-2-1"'
+p292
+I12
+sS'"[Thermocycler] Level 8 of 11"'
+p293
+I3357
+sS'"Project : Isolated Base Pairs: 2-2 Loops Adjacent to Multiloop"'
+p294
+I8
+sS'"Sarcin-ricin vs boosted internal loops - Shape 2"'
+p295
+I2
+sS'"Project : comparison series: 2-3"'
+p296
+I13
+sS'"SHAPE Profile - G/A Hairpin Terminal Mismatch and Neighboring Base Pairs CNGgaaaaCNG - Shape 0"'
+p297
+I1
+sS'"Project : comparison series: 15-14"'
+p298
+I11
+sS'"Project : Turtle project Ml 6-6-6-6 with 3 legs (2NT)'
+p299
+I6
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 19"'
+p300
+I1
+sS'"Project : comparison series: ML-I 8-2-8"'
+p301
+I9
+sS'"Project : Natural RNAs: U1A PIE"'
+p302
+I12
+sS'"Project : Multiloop: 3 Branches Unevenly Spaced (2)"'
+p303
+I10
+sS'"Project : Natural RNAs: Turnip Crinkle Virus Hairpin"'
+p304
+I14
+sS'"Investigation of Alternative Human tRNA Structures - Shape 33"'
+p305
+I1
+sS'"[Gene Synthesizer] Level 7 of 14"'
+p306
+I7189
+sS'"Hairpin Loop Comparison Pilot - Shape 2"'
+p307
+I18
+sS'"Project : Turtle project Ml 4-4-4-4'
+p308
+I6
+sS'"Project : comparison series: 15-3"'
+p309
+I11
+sS'"Identify tRNA Mutants Subject to Alternative RNA Processing - Shape 0"'
+p310
+I21
+sS'"Project : Whale of a Tale"'
+p311
+I5
+sS'"Project : comparison series: ML-I 1-5-1"'
+p312
+I9
+sS'"Project : Multiloop: 3 Branches Unevenly Spaced (1)"'
+p313
+I13
+sS'"Project : comparison series: NNF 2x 5-5 next"'
+p314
+I9
+sS'"[Microfluidic Chip] Level 1 of 7"'
+p315
+I974
+sS'"Project : Stack With Multiple 2-nt Bulges (2A)"'
+p316
+I10
+sS'"Project : comparison series: Hairpin loop with 15 nts"'
+p317
+I10
+sS'"Project : Stack With Multiple 1-1 Loops (2)"'
+p318
+I11
+sS'"Project : Long Leg"'
+p319
+I12
+sS'"test - Shape 2"'
+p320
+I1
+sS'"Project : Compact Tri Multi-Loop with Stacks of Length Five"'
+p321
+I15
+sS'"Project : Thingamabob"'
+p322
+I13
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 2"'
+p323
+I2
+sS'"Project : comparison series: ML-I 10-4-4"'
+p324
+I12
+sS'"Project : Internal Loops: 5-2"'
+p325
+I25
+sS'"Project : Two stacks"'
+p326
+I20
+sS'"Test - Shape 1"'
+p327
+I1
+sS'"Project : Turtle project Ml 2-2-2-2'
+p328
+I6
+sS'"Project : comparison series: NNF 2x 3-3 near"'
+p329
+I9
+sS'"Project : comparison series: ML-I 1-8-1"'
+p330
+I9
+sS'"Project : chain lengh an loop size series 1-3"'
+p331
+I7
+sS'"Project : comparison series: 7-1"'
+p332
+I6
+sS'"Investigation of Alternative Human tRNA Structures - Shape 24"'
+p333
+I1
+sS'"Project : Turtle project Ml 2-2-2-2-2-2 with 5 legs (2NT)'
+p334
+I6
+sS'"Project : idk"'
+p335
+I5
+sS'"Project : PDB Jigsaw Puzzle 1"'
+p336
+I12
+sS'"Project : Quadloop Mania 3"'
+p337
+I10
+sS'"Investigation of Alternative Human tRNA Structures - Shape 7"'
+p338
+I1
+sS'"Project : Turtle project Ml 1-1 with 2 legs (2NT)'
+p339
+I6
+sS'"Alternative structure space for human tRNAs - Shape 26"'
+p340
+I1
+sS'"Project : Isolated Base Pairs: 1-1 Loop Between 1-nt Bulges (1)"'
+p341
+I12
+sS'"Project : comparison series: B 0-5"'
+p342
+I12
+sS'"Project : comparison series: 7N ML-I  1-2-3 IL 3-3"'
+p343
+I15
+sS'"Project : Genetic Sequences: Curve 2"'
+p344
+I6
+sS'"TR1B1 - Shape 0"'
+p345
+I3
+sS'"test - Shape 12"'
+p346
+I1
+sS'"Example project for renewal 2 - Shape 0"'
+p347
+I1
+sS'"Project : Headless Bug Arm 1"'
+p348
+I15
+sS'"Project : Turtle project Ml 0-0-0-0-0-0'
+p349
+I6
+sS'"Project : comparison series: B 5-0"'
+p350
+I14
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 6"'
+p351
+I1
+sS'"Improve "The Branches NUPACK bot design 8" with "Simplified Berex Test" strategy"'
+p352
+I6
+sS'"Project : comparison series: 10-2"'
+p353
+I10
+sS'"Project : Turtle project Ml 1-1-1-1-1-1'
+p354
+I6
+sS'"Project : Compact Tri Multi-Loop with Stack Length Four"'
+p355
+I15
+sS'"2-2 Superboost"'
+p356
+I6
+sS'"Project : comparison series: 5-2"'
+p357
+I9
+sS'"Project : Isolated Base Pairs: Adjacent 2-1-Loops (4)"'
+p358
+I10
+sS'"Project : comparison series: 11-15"'
+p359
+I11
+sS'"[Thermocycler] Level 6 of 11"'
+p360
+I3407
+sS'"Project : comparison series: 8-15"'
+p361
+I12
+sS'"Alternative structure space for human tRNAs - Shape 29"'
+p362
+I4
+sS'"[Next-Generation Sequencer] Level 1 of 11"'
+p363
+I2407
+sS'"Multiloop with 6 short stems"'
+p364
+I3
+sS'"Project : Guanine Reduction"'
+p365
+I16
+sS'"Project : Coaxial Stacking: Shape Test (4)"'
+p366
+I9
+sS'"Project : Quadloop Mania 6"'
+p367
+I10
+sS'"Project : comparison series: ML-I 1-1-1"'
+p368
+I19
+sS'"Improve "The Branches NUPACK bot design 2" with "Repetition" strategy"'
+p369
+I16
+sS'"[Gene Synthesizer] Level 9 of 14"'
+p370
+I6241
+sS'"Project : Turtle project Ml 3-3-3'
+p371
+I6
+sS'"Project : Test of RNAfold (3)"'
+p372
+I7
+sS'"[RNA Polymerase] Level 9 of 9"'
+p373
+I1084
+sS'"Project : Genetic Sequences: 2-1 Loops"'
+p374
+I9
+sS'"[Next-Generation Sequencer] Level 2 of 11"'
+p375
+I2381
+sS'"[Gene Synthesizer] Level 3 of 14"'
+p376
+I9442
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 12"'
+p377
+I1
+sS'"Project : comparison series: 7N ML-I-b 1-1-1 IL 3-3"'
+p378
+I15
+sS'"[Next-Generation Sequencer] Level 3 of 11"'
+p379
+I2357
+sS'"Nando\'s Zippers - Shape 3"'
+p380
+I4
+sS'"Project : comparison series: NNF 2x 1-1 fused"'
+p381
+I9
+sS'"[RNA Polymerase] Level 6 of 9"'
+p382
+I1157
+sS'"Project : comparison series: 9-15"'
+p383
+I11
+sS'"Project : tttt"'
+p384
+I1
+sS'"Project : Tetraloop Library (1): Sequences with Known Structure"'
+p385
+I12
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 14"'
+p386
+I1
+sS'"[RNA Polymerase] Level 3 of 9"'
+p387
+I1219
+sS'"[Gene Synthesizer] Level 14 of 14"'
+p388
+I4397
+sS'"Project : 3-Branched Multiloop: Lonely Pentaloop"'
+p389
+I9
+sS'"Project : comparison series: 15-10"'
+p390
+I11
+sS'"Project : comparison series: 15-9"'
+p391
+I11
+sS'"Project : Turtle project Ml 2-2-2 with 2 legs (2NT)'
+p392
+I6
+sS'"Example project for renewal 2 - Shape 4"'
+p393
+I1
+sS'"Project : 4-4 loop"'
+p394
+I31
+sS'"Project : comparison series: ML-I 2-2-10"'
+p395
+I12
+sS'"test - Shape 6"'
+p396
+I1
+sS'"Project : Stack With Adjacent Bulges (1B)"'
+p397
+I9
+sS'"Test project - Shape 0"'
+p398
+I5
+sS'"Aptamer secondary structure - Shape 0"'
+p399
+I1
+sS'"Shiftable puzzle test"'
+p400
+I1
+sS'"TEBOWNED mutation - B"'
+p401
+I143
+sS'"Project : Loop Heavy"'
+p402
+I21
+sS'"Project : comparison series: ML-I 1-7-4"'
+p403
+I15
+sS'"Project : comparison series: NNF 2x 2-2 fused"'
+p404
+I6
+sS'"test - Shape 10"'
+p405
+I1
+sS'"Project : Hairpins: Pentaloop"'
+p406
+I27
+sS'"Project :  comparison series: 5N ML-I-b 2x 1-1-1"'
+p407
+I16
+sS'"Project : Turtle project Ml 8-8-8 with 2 legs (2NT)'
+p408
+I6
+sS'"Project : comparison series: 4-1"'
+p409
+I6
+sS'"Project : Stack With Multiple 3-nt Bulges (2A)"'
+p410
+I10
+sS'"Project : Hairpins: Tetraloop"'
+p411
+I25
+sS'"test - Shape 16"'
+p412
+I1
+sS'"Project : comparison series: NNF 2x 5-5 near"'
+p413
+I9
+sS'"Chemical Mapping Comparison of G-U+ Helices to G-U- Helices - Shape 0"'
+p414
+I7
+sS'"Project : comparison series: 2-4"'
+p415
+I14
+sS'"Project : Isolated Closing Pairs 1"'
+p416
+I24
+sS'"Project : Turtle project Ml 3-3-3 with 2 legs (2NT)'
+p417
+I7
+sS'"Project : comparison series: ML-I 2-10-2"'
+p418
+I9
+sS'"Project : comparison series: 5N ML-I 2x 1-1-1"'
+p419
+I17
+sS'"Project : comparison series: ML-I 5-5-5"'
+p420
+I12
+sS'"Project : Sharklike V-1 (SHAPE data Exp-1)"'
+p421
+I13
+sS'"Alternative structure space for human tRNAs - Shape 34"'
+p422
+I2
+sS'"Project : TRNA-Phe Yeast"'
+p423
+I12
+sS'"Project : Green Plimsole"'
+p424
+I18
+sS'"Project : comparison series: 10-10"'
+p425
+I12
+sS'"Project : Bistable RNA (1): Rod or Branch?"'
+p426
+I7
+sS'"Project : Pseudoknot 1: Minimal"'
+p427
+I17
+sS'"Project : comparison series: ML-I 4-1-1"'
+p428
+I12
+sS'"Project : comparison series: NNF 2x 4-4 next"'
+p429
+I9
+sS'"Project : comparison series: 8-8"'
+p430
+I11
+sS'"Nando\'s Zippers - Shape 8"'
+p431
+I1
+sS'"Project : comparison series: ML-I 2-1-2"'
+p432
+I9
+sS'"Project : Natural RNAs: U1A Polyadenylation Inhibition Element"'
+p433
+I2
+sS'"Project : Bulge Sampler: 4-nt"'
+p434
+I15
+sS'"Project : Test of RNAfold (1)"'
+p435
+I17
+sS'"Project : Turtle project Ml 10-10-10'
+p436
+I7
+sS'"Project : comparison series: 13-15"'
+p437
+I11
+sS'"Project : comparison series: 9-9"'
+p438
+I10
+sS'"Project : Zigzag: 1-Nucleotide Bulge (2)"'
+p439
+I10
+sS'"Improve "The Branches NUPACK bot design 2" with "Numbers of yellow nucleotides pr. length of string" strategy"'
+p440
+I12
+sS'"Project : Hard Lab Fragments: The Cross 0-0-0-0 Multiloop"'
+p441
+I11
+sS'"Project : TetraLoop CUYA - Just One Thing"'
+p442
+I21
+sS'"Project : comparison series: NNF 2x 4-4 fused"'
+p443
+I9
+sS'"Project : Coaxial Stacking: Shape Test (1)"'
+p444
+I13
+sS'"Project : APC IRES"'
+p445
+I12
+sS'"Project : Genetic Sequences: Hairpin Loop"'
+p446
+I7
+sS'"Investigation of Alternative Human tRNA Structures - Shape 8"'
+p447
+I1
+sS'"Project : comparison series: Hairpin loop with 12 nts"'
+p448
+I10
+sS'"Project : Half of The Branches"'
+p449
+I21
+sS'"Project : comparison series: ML-I 2-2-2 x2 9NTS"'
+p450
+I5
+sS'"Project : Turtle project Ml 8-8-8'
+p451
+I6
+sS'"Alternative structure space for human tRNAs - Shape 1"'
+p452
+I5
+sS'"Project : Compact Quad Multi-Loop 1"'
+p453
+I11
+sS'"Project : comparison series: ML-I 3-3-3"'
+p454
+I12
+sS'"Project : comparison series: ML-I 1-4-1"'
+p455
+I10
+sS'"Project : comparison series: B 0-3"'
+p456
+I18
+sS'"Project : One Step at a Time (1)"'
+p457
+I17
+sS'"Anaylysis of Potato Spindle Tuber Viroid - Shape 0"'
+p458
+I30
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 8"'
+p459
+I2
+sS'"Project : Turtle project Ml 6-6-6-6'
+p460
+I6
+sS'"Project : jandersonlee\'s LR15"'
+p461
+I8
+sS'"Alternative structure space for human tRNAs - Shape 6"'
+p462
+I1
+sS'"Project : 3-2 and 2-3 loops"'
+p463
+I4
+sS'"Project : Cytosine reduction"'
+p464
+I21
+sS'"Nando\'s Zippers - Shape 7"'
+p465
+I1
+sS'"Project : comparison series: ML-I 4-10-4"'
+p466
+I9
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 16"'
+p467
+I1
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 7"'
+p468
+I2
+sS'"Project : comparison series: ML-I 3-3-8"'
+p469
+I12
+sS'"Investigation of Alternative Human tRNA Structures - Shape 10"'
+p470
+I1
+sS'"Project : comparison series: B 1-0"'
+p471
+I12
+sS'"Project : Turtle project Ml 3-3-3-3-3 with 4 legs (2NT)'
+p472
+I6
+sS'"[Microfluidic Chip] Level 3 of 7"'
+p473
+I831
+sS'"Project : Coaxial Stackng: Two Stacks (5B)"'
+p474
+I7
+sS'"Project :   comparison series: ML-I 4-1-4"'
+p475
+I9
+sS'"Project : Stack With Multiple 1-1 Loops (4)"'
+p476
+I10
+sS'"Improve "Bulged Star NUPACK design 01" with "Direction of GC pairs +neck area" strategy"'
+p477
+I33
+sS'"Project : Five Branch Multiloop"'
+p478
+I13
+sS'"Alternative structure space for human tRNAs - Shape 12"'
+p479
+I1
+sS'"Project : loop test 6"'
+p480
+I14
+sS'"Project : comparison series: 2-10"'
+p481
+I15
+sS'"Project : comparison series: ML-I 3-1-2"'
+p482
+I12
+sS'"Project : Hard Lab Fragments: Kudzu Neck"'
+p483
+I12
+sS'"Project : comparison series: 1-10"'
+p484
+I6
+sS'"Project : comparison series: NNF x3 1-1 next"'
+p485
+I6
+sS'"Project : Turtle project  Ml 1-1-1-1-1'
+p486
+I6
+sS'"Project : chain length and loop size series 1-8"'
+p487
+I7
+sS'"Project : comparison series: 1-6"'
+p488
+I10
+sS'"Example project for renewal 2 - Shape 1"'
+p489
+I1
+sS'"Effects of nucleotide exposure on global RNA elements. - Shape 4"'
+p490
+I1
+sS'"Project : Stack With Multiple 1-1 Loops (1)"'
+p491
+I12
+sS'"Project : Stack With Multiple 2-nt Bulges (1A)"'
+p492
+I6
+sS'"Project :  comparison series: NNF x3 3-3 next"'
+p493
+I6
+sS'"Project : comparison series: NNF 2x 6-6  next"'
+p494
+I15
+sS'"Project : Headless Bug Arm 4"'
+p495
+I12
+sS'"Project : Coaxial Stacking: Two Stacks (5A)"'
+p496
+I8
+sS'"Project : S&E5 Modified"'
+p497
+I11
+sS'"Chemical Mapping Comparison of G-U+ Helices to G-U- Helices - Shape 3"'
+p498
+I2
+sS'"Project : comparison series: ML-I 2-2-2 x2 5NTS"'
+p499
+I9
+sS'"Project : comparison series: NNF x3 1-1 fused"'
+p500
+I10
+sS'"Improve "The Branches NUPACK bot design 8" with "Direction of GC pairs + neck area" strategy"'
+p501
+I19
+sS'"Project : comparison series: ML-I 1-7-1"'
+p502
+I9
+sS'"Investigation of Alternative Human tRNA Structures - Shape 32"'
+p503
+I2
+sS'"test - Shape 3"'
+p504
+I2
+sS'"Exhaustive GAGA tetraloop closure test with AU Backing - Shape 0"'
+p505
+I36
+sS'"Nando\'s Zippers - Shape 10"'
+p506
+I1
+sS'"Project : Stack With Multiple Bulges (2B)"'
+p507
+I9
+sS'"Alternative structure space for human tRNAs - Shape 21"'
+p508
+I1
+sS'"Project : comparison series: 2-5"'
+p509
+I16
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 3"'
+p510
+I3
+sS'"Project : Bulge Sampler: 1-nt"'
+p511
+I11
+sS'"Project : comparison series: 4-2"'
+p512
+I9
+sS'"Project : Turtle project Ml 1-1-1-1-1'
+p513
+I7
+sS'"test - Shape 20"'
+p514
+I6
+sS'"Project : comparison series: ML-I 3-1-3"'
+p515
+I9
+sS'"Project : Turtle project Ml 2-2-2-2 with 3 legs (2NT)'
+p516
+I6
+sS'"Alternative structure space for human tRNAs - Shape 22"'
+p517
+I1
+sS'"Investigation of Alternative Human tRNA Structures - Shape 20"'
+p518
+I1
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 23"'
+p519
+I1
+sS'"Project : Isolated Closing Pairs 2"'
+p520
+I21
+sS'"[Gene Synthesizer] Level 4 of 14"'
+p521
+I9213
+sS'"Project : comparison series: NNF 2x 3-3 fused"'
+p522
+I9
+sS'"Investigation of Alternative Human tRNA Structures - Shape 3"'
+p523
+I1
+sS'"Project : comparison series: ML-I 2-2-2 x2 8NTS"'
+p524
+I7
+sS'"Project : Plain Hooked"'
+p525
+I17
+sS'"Effects of nucleotide exposure on global RNA elements. - Shape 1"'
+p526
+I1
+sS'"Project : 3 single nucleotide bulges"'
+p527
+I18
+sS'"Project : Zigzag: 1-Nucleotide Bulge (1)"'
+p528
+I11
+sS'"Project : comparison series: ML-I 10-2-2"'
+p529
+I12
+sS'"Project : comparison series: ML-I 2-2-2 x2 7NTS"'
+p530
+I7
+sS'"Project : comparison series: ML-I 1-3-1"'
+p531
+I12
+sS'"Testing - Shape 0"'
+p532
+I1
+sS'"Project : Zigzag: 1-Nucleotide Bulge (3)"'
+p533
+I10
+sS'"Alternative structure space for human tRNAs - Shape 30"'
+p534
+I1
+sS'"[Next-Generation Sequencer] Level 6 of 11"'
+p535
+I2050
+sS'"Investigation of Alternative Human tRNA Structures - Shape 4"'
+p536
+I1
+sS'"Alternative structure space for human tRNAs - Shape 27"'
+p537
+I4
+sS'"Project : Turtle project Ml 5-5-5 with 2 legs (2NT)'
+p538
+I6
+sS'"Alternative structure space for human tRNAs - Shape 37"'
+p539
+I2
+sS'"test - Shape 15"'
+p540
+I1
+sS'"Project : Lab design for newer players"'
+p541
+I10
+sS'"Project : kARMa"'
+p542
+I13
+sS'"Project : comparison series: ML-I 4-4-10"'
+p543
+I12
+sS'"Project : Turtle project Ml 9-9-9 with 2 legs (2NT)'
+p544
+I6
+sS'"Project : comparison series: 6-1"'
+p545
+I7
+sS'"TR1B1 - Shape 1"'
+p546
+I2
+sS'"[Next-Generation Sequencer] Level 9 of 11"'
+p547
+I1954
+sS'"Project : Coaxial Stacking: Shape Test (3)"'
+p548
+I9
+sS'"Project : comparison series: 10-1"'
+p549
+I7
+sS'"Project : mnm7198\'s project"'
+p550
+I8
+sS'"Project : Pseudoknot 2: Biotin-Binding Pseudoknot"'
+p551
+I15
+sS'"Project : Coaxial Stacking: 4A"'
+p552
+I6
+sS'"Poly (A) Structure Analysis 3 - Shape 2"'
+p553
+I3
+sS'"[Thermocycler] Level 1 of 11"'
+p554
+I4150
+sS'"Project : comparison series: 3-1"'
+p555
+I6
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 4"'
+p556
+I2
+sS'"Investigation of Alternative Human tRNA Structures - Shape 29"'
+p557
+I1
+sS'"Project : comparison series: 5-1"'
+p558
+I7
+sS'"Sarcin-ricin vs internal loops (redo) - Shape 4"'
+p559
+I6
+sS'"Project : ajdfhld"'
+p560
+I13
+sS'"Project : Triloop Mania"'
+p561
+I18
+sS'"Project : Quadloop Mania 2"'
+p562
+I12
+sS'"Project : Example project"'
+p563
+I52
+sS'"Alternative structure space for human tRNAs - Shape 2"'
+p564
+I5
+sS'"Project : comparison series: 15-15"'
+p565
+I14
+sS'"Project : Quadloop Mania 7"'
+p566
+I13
+sS'"Project : chain length and loop size series 1-5"'
+p567
+I7
+sS'"Project : Turtle project Ml 2-2-2-2-2'
+p568
+I5
+sS'"Project : LR8"'
+p569
+I9
+sS'"Project : Turtle project Ml 9-9-9'
+p570
+I3
+sS'"Project : Turtle project Ml 6-6-6 with 2 legs (2NT)'
+p571
+I6
+sS'"Project : Branching Loop - 6 nucleotides"'
+p572
+I12
+sS'"Project : Hard Lab Fragments: Water Strider Arm"'
+p573
+I12
+sS'"Project : comparison series: ML-I 2-2-2 6'
+p574
+I8
+sS'"test - Shape 18"'
+p575
+I5
+sS'"Project : comparison series: 15-1"'
+p576
+I14
+sS'"Improve "Bulged Star NUPACK design 01" with "Numbers of yellow nucleotides pr. length of string" strategy"'
+p577
+I25
+sS'"Poly (A) Structure Analysis 3 - Shape 3"'
+p578
+I8
+sS'"Project : comparison series: ML-I 3-10-3"'
+p579
+I9
+sS'"Project : comparison series: ML-I 2-2-2 4'
+p580
+I8
+sS'"Project : Loop 1-1 Mania 1"'
+p581
+I11
+sS'"Project : comparison series: Triloop  "'
+p582
+I14
+sS'"[Microfluidic Chip] Level 6 of 7"'
+p583
+I746
+sS'"Helical Stability in a Multistate RNA System - Shape 0"'
+p584
+I1
+sS'"Project : comparison series: ML-I 2-2-2 x2 6NTS"'
+p585
+I10
+sS'"Project : comparison series: 1-2"'
+p586
+I9
+sS'"Project : comparison series: Pentaloop  "'
+p587
+I14
+sS'"Project : T6-5 S3 E4 (RS)"'
+p588
+I10
+sS'"[Next-Generation Sequencer] Level 10 of 11"'
+p589
+I1945
+sS'"Project : Cytosine Free 2"'
+p590
+I14
+sS'"Project : comparison series: 2-8"'
+p591
+I15
+sS'"Project : Stack With Multiple Bulges (1A)"'
+p592
+I9
+sS'"Project :  comparison series: NNF x3 2-2 fused"'
+p593
+I3
+sS'"[Thermocycler] Level 3 of 11"'
+p594
+I3761
+sS'"Poly (A) Structure Analysis 3 - Shape 4"'
+p595
+I2
+sS'"Project : comparison series: 15-13"'
+p596
+I10
+sS'"Example project for renewal 2 - Shape 5"'
+p597
+I1
+sS'"Effects of nucleotide exposure on global RNA elements. - Shape 2"'
+p598
+I1
+sS'"Project : loop test 5"'
+p599
+I11
+sS'"[RNA Polymerase] Level 8 of 9"'
+p600
+I1127
+sS'"Project : Natural RNAs: flpD RNA Motif"'
+p601
+I5
+sS'"Project : comparison series: Hairpin loop with 13 nts"'
+p602
+I9
+sS'"Project : comparison series: ML-I 1-1-10"'
+p603
+I12
+sS'"Alternative structure space for human tRNAs - Shape 11"'
+p604
+I1
+sS'"Project : comparison series: ML-I 1-10-1"'
+p605
+I12
+sS'"Project : comparison series: 1-9"'
+p606
+I6
+sS'"Project : Coaxial Stacking: Two Stacks (3A)"'
+p607
+I9
+sS'"Project : comparison series: ML-I 6-2-2"'
+p608
+I12
+sS'"Test sequence pilot - Shape 0"'
+p609
+I1
+sS'"Project : comparison series: 2-1"'
+p610
+I7
+sS'"test - Shape 9"'
+p611
+I1
+sS'"[Microfluidic Chip] Level 2 of 7"'
+p612
+I948
+sS'"Example project for renewal 2 - Shape 2"'
+p613
+I1
+sS'"Project : Isolated Base Pairs: Adjacent 2-1 Loops (1)"'
+p614
+I11
+sS'"Sarcin-ricin vs boosted internal loops - Shape 1"'
+p615
+I2
+sS'"[Next-Generation Sequencer] Level 8 of 11"'
+p616
+I1975
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 2"'
+p617
+I1
+sS'"Improve "Bulged Star NUPACK design 02" with "Direction of GC pairs + neck area" strategy"'
+p618
+I18
+sS'"Project : JerryP\'s winning design without tetraloop boost"'
+p619
+I28
+sS'"Reproducibility Lab 2 - Shape 0"'
+p620
+I3
+sS'"Nando\'s Zippers - Shape 2"'
+p621
+I4
+sS'"Project : Zigzag: 1-Nucleotide Bulge (4)"'
+p622
+I9
+sS'"Project : Small Boot"'
+p623
+I15
+sS'"Project : Turtle project Ml 2-2-2'
+p624
+I6
+sS'"Project : comparison series:  ML-I 2-2-2 5'
+p625
+I5
+sS'"Project : Mat - comparison series: Hairpin loop with 9 nts- D1"'
+p626
+I11
+sS'"Sarcin-ricin vs internal loops (redo) - Shape 1"'
+p627
+I2
+sS'"Project : comparison series:  ML-I 2-2-2 8'
+p628
+I5
+sS'"Investigation of Alternative Human tRNA Structures - Shape 35"'
+p629
+I1
+sS'"Project : comparison series: Hairpin loop with 14 nts"'
+p630
+I10
+sS'"[Thermocycler] Level 7 of 11"'
+p631
+I3376
+sS'"[Next-Generation Sequencer] Level 5 of 11"'
+p632
+I2161
+sS'"Effects of nucleotide exposure on global RNA elements. - Shape 5"'
+p633
+I1
+sS'"Project : T5-6 S3 E4 (SR)"'
+p634
+I15
+sS'"Project : comparison series: 14-14"'
+p635
+I10
+sS'"Project : Turtle project Ml 4-4-4'
+p636
+I3
+sS'"test - Shape 0"'
+p637
+I1
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 0"'
+p638
+I5
+sS'"Project : test"'
+p639
+I2
+sS'"Project : Turtle project Ml 12-12-12'
+p640
+I4
+sS'"Alternative structure space for human tRNAs - Shape 33"'
+p641
+I1
+sS'"Project : 2-2 loop"'
+p642
+I44
+sS'"Project : Turtle project Ml 0-0-0. 2 legs (3 NT)'
+p643
+I6
+sS'"Nando\'s Zippers - Shape 6"'
+p644
+I1
+sS'"Project : comparison series: NNF 2x 1-1 next"'
+p645
+I12
+sS'"Project : 30 Nucleotide Loop 1 - Symmetric Internal Loop"'
+p646
+I17
+sS'"Project : comparison series: ML-I 2-1-3"'
+p647
+I12
+sS'"Project : Coaxial Stacking: Shape Test (2)"'
+p648
+I10
+sS'"Improve "Bulged Star NUPACK design 01" with "Repetition" strategy"'
+p649
+I15
+sS'"Project : comparison series: 7-7"'
+p650
+I18
+sS'"Sarcin-ricin vs boosted internal loops - Shape 0"'
+p651
+I2
+sS'"Project : comparison series: ML-I 8-3-3"'
+p652
+I13
+sS'"test - Shape 17"'
+p653
+I1
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 8"'
+p654
+I1
+sS'"Project :  comparison series: ML-I 1-6-1"'
+p655
+I9
+sS'"Project : Bulge Sampler: 3-nt"'
+p656
+I13
+sS'"Project : Branching Loop - 8 nucleotides"'
+p657
+I7
+sS'"Investigation of Alternative Human tRNA Structures - Shape 0"'
+p658
+I1
+sS'"Effects of Base Pair Mutations on the RNA Ensemble and Reverse Transcription - Shape 0"'
+p659
+I6
+sS'"Project : 3-3 + 5*"'
+p660
+I14
+sS'"Project : comparison series: NNF 2x 6-6 near"'
+p661
+I9
+sS'"Project : Coaxial Stacking: Two Stacks (4B)"'
+p662
+I6
+sS'"Investigation of Alternative Human tRNA Structures - Shape 9"'
+p663
+I1
+sS'"Alternative structure space for human tRNAs - Shape 24"'
+p664
+I4
+sS'"[Microfluidic Chip] Level 7 of 7"'
+p665
+I741
+sS'"Project : Stack With Multiple 2-nt Bulges (2B)"'
+p666
+I9
+sS'"Project : comparison series: N7-S6"'
+p667
+I10
+sS'"Project : Reshiram'
+p668
+I12
+sS'"Project : Turtle project Ml 3-3-3-3-3'
+p669
+I3
+sS'"Project :  Chesterfield\'s-The Mousekateer"'
+p670
+I20
+sS'"test - Shape 4"'
+p671
+I1
+sS'"Project : comparison series: 3-15"'
+p672
+I19
+sS'"Project : comparison series: N6-S7"'
+p673
+I8
+sS'"Codon riboswitch [histidine]"'
+p674
+I12
+sS'"Project : Repetitive Structures"'
+p675
+I20
+sS'"Alternative structure space for human tRNAs - Shape 7"'
+p676
+I1
+sS'"Improve "Bulged Star NUPACK design 02" with "Simplified Berex Test" strategy"'
+p677
+I3
+sS'"[RNA Polymerase] Level 4 of 9"'
+p678
+I1205
+sS'"Project : Sample puzzle for lab"'
+p679
+I12
+sS'"Project : comparison series: Hairpin loop with 11 nts"'
+p680
+I10
+sS'"Project : Stack With Multiple Bulges (5)"'
+p681
+I10
+sS'"Multistate RNA Structure: 3-way junction to 2-way junction - Shape 9"'
+p682
+I4
+sS'"Project : Turtle project Ml 0-0-0-0'
+p683
+I6
+sS'"Project : comparison series: ML-I 4-4-4"'
+p684
+I12
+sS'"Investigation of Alternative Human tRNA Structures - Shape 13"'
+p685
+I1
+sS'"Project : Large Loop"'
+p686
+I20
+sS'"Nando\'s Zippers - Shape 4"'
+p687
+I2
+sS'"FMN switch Mimics: Round 91 follow-up - Shape 10"'
+p688
+I1
+sS'"[Thermocycler] Level 4 of 11"'
+p689
+I3620
+sS'"Project : Multiloop: Two Pairs of Adjacent Stacks"'
+p690
+I18
+sS'"Project :  comparison series: NNF x3 2-2 next"'
+p691
+I3
+sS'"Project : comparison series: 15-6"'
+p692
+I12
+sS'"Project : Quadloop Mania 4"'
+p693
+I11
+sS'"Project : Hairpins: Heptaloop"'
+p694
+I28
+sS'"Project : Hairpins: Triloop"'
+p695
+I26
+sS'"Project : comparison series: 15-2"'
+p696
+I13
+sS'"Exhaustive AAA triloop closure test with CG Deep Backing - Shape 0"'
+p697
+I22
+sS'"Project : comparison series: B 0-2"'
+p698
+I16
+sS'"Effects of nucleotide exposure on global RNA elements. - Shape 6"'
+p699
+I1
+sS'"hHAR1 10mM MgCl2"'
+p700
+I2
+sS'"Project : comparison series: ML-I 2-2-2 8'
+p701
+I5
+sS'"Project : Headless Bug Arm 5"'
+p702
+I11
+sS'"Project : comparison series: ML-I 2-2-2 3'
+p703
+I8
+sS'"Project : Stack With Multiple Bulges (2A)"'
+p704
+I10
+sS'"Project : comparison series: ML-I 2-2-2 7'
+p705
+I5
+sS'"Project : comparison series: 1-5"'
+p706
+I7
+sS'"Project : comparison series: ML-I 2-2-2 5'
+p707
+I6
+sS'"Project : Nupack\'s Finger Revisited"'
+p708
+I17
+sS'"Multistate RNA - CC/G bulge - Shape 0"'
+p709
+I1
+sS'"Project : Natural RNAs: Coronavirus 3\' s2m"'
+p710
+I9
+sS'"Project : comparison series: ML-I 2-2-2"'
+p711
+I15
+sS'"Project : Bug 11"'
+p712
+I20
+sS'"Project : Turtle project Ml 7-7-7-7'
+p713
+I3
+sS'"TEBOWNED mutation - U"'
+p714
+I128
+sS'"20-stack hexaloop hairpin"'
+p715
+I2
+sS'"Project : Isolated Base Pairs: Adjacent 2-1 Loops (3)"'
+p716
+I9
+sS'"Project : comparison series: B 3-0"'
+p717
+I12
+sS'"Hairpin Loop Comparison Pilot - Shape 0"'
+p718
+I5
+sS'"Project : Mat - comparison series: Hairpin loop with 10 nts"'
+p719
+I12
+sS'"Project : Tetraloop Library (2): Modified Stack"'
+p720
+I12
+sS'"Project : comparison series: 6-15"'
+p721
+I15
+sS'"Project : comparison series: 2-6"'
+p722
+I12
+sS'"Sarcin-ricin vs boosted internal loops - Shape 5"'
+p723
+I2
+sS'"Improve "Bulged Star NUPACK design 01" with "Simplified Berex Test" strategy"'
+p724
+I10
+s.

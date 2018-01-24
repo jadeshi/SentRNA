@@ -1,0 +1,17 @@
+(lp0
+(lp1
+F73.6
+aF2.7
+aa(lp2
+F15.0
+aF2.9
+aa(lp3
+F15.0
+aF1.7
+aa(lp4
+F15.0
+aF2.5
+aa(lp5
+F60.0
+aF0.0
+aa.
