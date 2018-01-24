@@ -129,34 +129,52 @@ if __name__ == '__main__':
     parser.add_argument('--input_data', type=str)
     parser.add_argument('--results_path', type=str)
     ######## Train arguments ############
-    parser.add_argument('--puzzle_names', type=str, default='-1')
-    parser.add_argument('--n_train_puzzles', type=int, default=50)
-    parser.add_argument('--n_solutions_per_puzzle', type=int, default=1)
-    parser.add_argument('--stochastic_fill', type=bool, default=False)
-    parser.add_argument('--renderer', type=str, default='rnaplot', help='Choose either "rnaplot" or "eterna"')
+    parser.add_argument('--puzzle_names', type=str, default='-1', help='A list of all puzzle names from the training data. If not supplied, will be generated.')
+    parser.add_argument('--n_train_puzzles', type=int, default=50, help='How many puzzle to include in the training set.')
+    parser.add_argument('--n_solutions_per_puzzle', type=int, default=1, help='How many player solutions per puzzle to use for training.')
+    parser.add_argument('--stochastic_fill', type=bool, default=False, help='''When generating the solution trajectory from a player solution, either fill in the puzzle
+    sequentially (False) or randomly (True)''')
+    parser.add_argument('--renderer', type=str, default='rnaplot', help='How to render target structures. Choose either "rnaplot" or "eterna"')
     # Long range feature compute arguments
-    parser.add_argument('--long_range_input', type=str, default='-1')
-    parser.add_argument('--n_long_range_features', type=int, default=0)
+    parser.add_argument('--long_range_input', type=str, default='-1', help='A .pkl file of long-range features to use instead of calculating them.')
+    parser.add_argument('--n_long_range_features', type=int, default=0, help='How many long-range features to use as part of the input.')
     # if --long_range_input is supplied, the rest of these are not necessary.
-    parser.add_argument('--puzzle_solution_count', type=str, default='-1')
-    parser.add_argument('--n_min_solutions', type=int, default=50)
-    parser.add_argument('--long_range_output', type=str, default='long_range_features.pkl')
-    parser.add_argument('--force_add_features', type=bool, default=True)
-    parser.add_argument('--features_per_puzzle', type=int, default=1)
-    parser.add_argument('--random_append', type=int, default=0)
+    parser.add_argument('--puzzle_solution_count', type=str, default='-1', help='''A dictionary with keys corresponding to puzzle names, and values corresponding to
+    the total number of player solutions for that puzzle in the dataset. Used to determine which puzzles will be used during the mutual information calculation to 
+    determine long range features.''')
+    parser.add_argument('--n_min_solutions', type=int, default=50, help='''A puzzle must have at least this many solutions to be used in the mutual information
+    calculation to determine long-range features. Prevents introduction of noise into the calculation when only few player solutions exist.''')
+    parser.add_argument('--long_range_output', type=str, default='long_range_features.pkl', help='''What to name the .pkl file of long range features 
+    that will be automatically generated during training.''')
+    parser.add_argument('--force_add_features', type=bool, default=True, help='''Force the addition of "features_per_puzzle" features to the aggregate list 
+    of long-range features for each puzzle. If this is set to False, if the top "features_per_puzzle" features of a puzzle are already part of the aggregate 
+    list, that puzzle is skipped and no features are contributed by that puzzle. If set to True, the first non-overlapping "features_per_puzzle" features (ordered by 
+    mutual information) will be added.''')
+    parser.add_argument('--features_per_puzzle', type=int, default=1, help='''How many long range features each puzzle can contribute.''')
+    parser.add_argument('--random_append', type=int, default=0, help='''Before performing the mutual information calculation for a given puzzle, 
+    append ("random_append" x number of player solutions) randomly generated sequences to the dataset. This is for instances in which a specific 
+    strategy must be used to solve a puzzle, e.g. multiloop coordinated GC pair ordering, that result in identical solutions for the multiloop, 
+    resulting in mutual information between all multiloop bases to be 0. By adding randomly generated solutions, we force recognition of correlation 
+    between these bases and picking up of the multiloop features.''')
     # Neural network params
-    parser.add_argument('--n_layers', type=int, default=3)
-    parser.add_argument('--hidden_size', type=int, default=100)
-    parser.add_argument('--n_epochs', type=int, default=1000)
-    parser.add_argument('--checkpoint_length', type=int, default=100)
+    parser.add_argument('--n_layers', type=int, default=3, help='Number of hidden layers.')
+    parser.add_argument('--hidden_size', type=int, default=100, help='Number of nodes in each hidden layer.')
+    parser.add_argument('--n_epochs', type=int, default=1000, help='How many epochs to train the model.')
+    parser.add_argument('--checkpoint_length', type=int, default=100, help='How many epochs to train before performing a validation.')
     ########## Test arguments ##############
-    parser.add_argument('--test_model', type=str)
-    parser.add_argument('--test_puzzle_name', type=str, default='-1')
+    parser.add_argument('--test_model', type=str, help='Name of trained model')
+    parser.add_argument('--test_puzzle_name', type=str, default='-1', help='''Name of the puzzle to use to test the model. If not supplied, 
+    the model will be tested on all puzzles in input_data.''')
     ######### Refine arguments ############
-    parser.add_argument('--n_trajs', type=int, default=300)
-    parser.add_argument('--n_steps', type=int, default=30)
-    parser.add_argument('--move_set', type=str, default='GoodPairsMove(),BadPairsMove(),MissingPairsMove(),BoostMove()')
-    parser.add_argument('--refine_puzzle_name', type=str, default='-1')
+    parser.add_argument('--n_trajs', type=int, default=300, help='''Number of refinement trajectories.''')
+    parser.add_argument('--n_steps', type=int, default=30, help='''Number of moves per trajectory.''')
+    parser.add_argument('--move_set', type=str, default='GoodPairsMove(),BadPairsMove(),MissingPairsMove(),BoostMove()', help='''Moveset used during refinement:
+    GoodPairsMove(): re-pair two correctly paired bases
+    BadPairsMove(): unpair two incorrectly paired bases
+    MissingPairsMOve(): pair two bases that should be paired but are currently unpaired
+    BoostMove(): boost using G or U-U boosts.''')
+    parser.add_argument('--refine_puzzle_name', type=str, default='-1', help='''Name of puzzle to refine. If not supplied, will refine 
+    all puzzles in input_data.''')
     args = parser.parse_args()
     if args.renderer == 'rnaplot':
         from util.featurize_util import *
