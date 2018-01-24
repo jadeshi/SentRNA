@@ -1,7 +1,7 @@
 # SentRNA
 A computational agent for inverse RNA folding, i.e. predicting a RNA sequence that folds into a given target structure.
 * Combines neural-network prediction followed by adaptive walk refinement to propose valid sequences for complex targets
-* Trained on human player solutions from the online RNA design game EteRNA (www.eternagame.org)
+* Trained on human player solutions from the online RNA design game EteRNA (www.eternagame.org) with the goal of learning human-like design strategies.
 
 ## Author
 Jade Shi
