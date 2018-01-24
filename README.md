@@ -24,7 +24,7 @@ Eterna100 (http://www.eternagame.org/web/blog/6136054/)
 ### 1. Training
 An example template for the full process of training, validation, testing, and refinement is included: /SentRNA/test_pipeline.py. Training a model is handled by the first command in the file.
 
-The dataset used to train the model is a custom-compiled list of player solutions across 724 unique target structures (puzzles). Only puzzles 1 to 722 are used for training, whereas puzzle 722 and 724 are reserved for initial validation and testing.
+The dataset used to train the model is a custom-compiled list of player solutions across 724 unique target structures (puzzles). Only puzzles 1 to 721 are used for training, whereas puzzle 722 and 724 are reserved for initial validation and testing.
 
 The trained model is saved in the automatically generated "test" directory.
 
