@@ -13,6 +13,7 @@ ViennaRNA 1.8.5: Add the included /SentRNA/util/ViennaRNA-1.8.5/Progs directory 
 
 ## Benchmarks:
 Eterna100 (http://www.eternagame.org/web/blog/6136054/)
+
 80 / 100
 
 ## Usage instructions:
