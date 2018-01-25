@@ -18,7 +18,7 @@ included). Add the following directory paths to your $PATH environment variable:
 ## Benchmarks
 Eterna100 (http://www.eternagame.org/web/blog/6136054/)
 
-80 / 100 across 163 models trained (all located in models/trained_models)
+80 / 100 across 165 models trained (all located in models/trained_models)
 
 ## Usage instructions:
 ### 1. Training
