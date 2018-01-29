@@ -6,9 +6,9 @@ Kyurem 7    models/trained_models/batch2    val_test_n_samples=2_force_add_featu
 
 Kyurem 5    models/trained_models/batch2    val_test_n_samples=2_force_add_features=False_threshold=2_shuffle=True_random_append=0_train_on_solved
 
-1,2,3and4bulges    models/trained_models/batch1    trial-14_MI-20
+"1,2,3and4bulges"    models/trained_models/batch1    trial-14_MI-20
 
-Loop next to a multiloop    models/trained_models/batch1    trial-1_MI-26
+Loop next to a Multiloop    models/trained_models/batch1    trial-1_MI-26
 
 Crop circle 2    models/trained_models/batch2    val_test_n_samples=8_force_add_features=False_threshold=2_shuffle=False_random_append=0_train_on_solved
 
