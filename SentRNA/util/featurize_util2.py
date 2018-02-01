@@ -6,6 +6,28 @@ import random
 from copy import deepcopy
 import draw_rna
 
+def load_txt(filename):
+    '''Loads a text file of puzzle information to be used by SentRNA. Each line should correspond to a puzzle and 
+       should be ordered as:
+       - Puzzle name
+       - Dot bracket of target
+       - Solution
+       - Locked bases
+       
+       separated by commas.
+
+       You can either supply all of this information (training), or just the name and dot bracket (testing). 
+       If only name and dot bracket are provided, the solution and constraints will be set to a sequence of all A's and all o's respectively.'''
+    data = open(filename).read().splitlines()
+    output = []
+    for i in data:
+        i = i.split(',')
+        puzzle_info = [j for j in i]
+        if len(puzzle_info) == 2:
+            puzzle_info += ['A' * len(puzzle_info[-1]), 'o' * len(puzzle_info[-1])]
+        output.append(puzzle_info)
+    return output
+
 def compute_angle(triplet):
   '''Compute angle between three points.'''
   p1, p2, p3 = triplet

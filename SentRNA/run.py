@@ -180,7 +180,10 @@ if __name__ == '__main__':
         from util.featurize_util import *
     else:
         from util.featurize_util2 import *
-    input_data = pickle.load(open(args.input_data))
+    if '.pkl' in args.input_data:
+        input_data = pickle.load(open(args.input_data))
+    else:
+        input_data = load_txt(args.input_data)
     if args.mode == 'train':
         os.system('mkdir results test test/%s'%(args.results_path))
         if args.puzzle_names == '-1':
