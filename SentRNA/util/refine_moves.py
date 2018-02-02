@@ -27,30 +27,13 @@ def insert_base(seq, index, char):
   seq[index] = char
   return ''.join(seq)
 
-class Move(object):
-
-    def __init__(self, constraints=None):
-        self.constraints = constraints
-        pass
-
-class SingleMutationMove(Move):
-    def __init__(self):
-        self.mutations = ['A', 'U', 'C', 'G']
-
-    def mutate(self, seq, index, mutation):
-        seq = insert_base(seq, index, mutation)
-        return seq
-
-    def apply(self, dot_bracket, current_solution):
-        index = random.choice(range(len(dot_bracket)))
-        mutation = random.choice(self.mutations)
-        mod_solution = self.mutate(current_solution, index, mutation)
-        new_accuracy, _, new_bad_pairs, new_missing_pairs = refine_check_answer(dot_bracket, mod_solution)
-        return [new_accuracy, new_bad_pairs, new_missing_pairs], mod_solution
-        
-class BoostMove(Move):
-    def __init__(self):
-        self.mutations = [['U', 'U'], ['G', 'A'], ['A', 'G']]
+# Moveset        
+class BoostMove():
+    def __init__(self, mutations=False):
+        if mutations:
+            self.mutations = mutations
+        else:
+            self.mutations = [['U', 'U'], ['G', 'A'], ['A', 'G']]
 
     def mutate(self, seq, pair, mutation):
         seq = insert_base(seq, pair[0], mutation[0])
@@ -79,12 +62,14 @@ class BoostMove(Move):
         new_accuracy, _, new_bad_pairs, new_missing_pairs = refine_check_answer(dot_bracket, mod_solution)
         return [new_accuracy, new_bad_pairs, new_missing_pairs], mod_solution
 
-class MissingPairsMove(Move):
+class MissingPairsMove():
     '''Mutate unpaired bases that should be paired to a suitable pair.'''
-    def __init__(self):
-        self.mutations = [['G', 'U'], ['U', 'G'], ['G', 'C'], ['C', 'G'], ['A', 'U'], ['U', 'A']]
-        pass
-    
+    def __init__(self, mutations=False):
+        if mutations:
+            self.mutations = mutations
+        else:
+            self.mutations = [['G', 'U'], ['U', 'G'], ['G', 'C'], ['C', 'G'], ['A', 'U'], ['U', 'A']]
+     
     def mutate(self, seq, pair, mutation):
         seq = insert_base(seq, pair[0], mutation[0])
         seq = insert_base(seq, pair[1], mutation[1])
@@ -104,10 +89,13 @@ class MissingPairsMove(Move):
         return [new_accuracy, new_bad_pairs, new_missing_pairs], mod_solution
 
 
-class BadPairsMove(Move):
+class BadPairsMove():
     '''Mutate bad pairs that should not exist away to something not amenable to pairing'''
-    def __init__(self):
-        self.unpaired_mutations = [['A', 'A'], ['U', 'U'], ['C', 'C'], ['G', 'G'], \
+    def __init__(self, mutations=False):
+        if mutations:
+            self.unpaired_mutations = mutations
+        else:
+            self.unpaired_mutations = [['A', 'A'], ['U', 'U'], ['C', 'C'], ['G', 'G'], \
                                    ['A', 'C'], ['C', 'A'], ['A', 'G'], ['G', 'A'], \
                                    ['U', 'C'], ['C', 'U']]
         
@@ -130,11 +118,14 @@ class BadPairsMove(Move):
         return [new_accuracy, new_bad_pairs, new_missing_pairs], mod_solution
 
 
-class GoodPairsMove(Move):
+class GoodPairsMove():
     '''If pairing is already good, either mutate to another set of pairing bases or swap them.'''
-    def __init__(self):
-        self.pair_mutations = [['G', 'U'], ['U', 'G'], ['G', 'C'], ['C', 'G'], ['A', 'U'], ['U', 'A']]
-
+    def __init__(self, mutations=False):
+        if mutations:
+            self.pair_mutations = mutations
+        else:
+            self.pair_mutations = [['G', 'U'], ['U', 'G'], ['G', 'C'], ['C', 'G'], ['A', 'U'], ['U', 'A']]
+    
     def swap(self, seq, pair):
         base_1, base_2 = seq[pair[0]], seq[pair[1]]
         seq = insert_base(seq, pair[1], base_1)

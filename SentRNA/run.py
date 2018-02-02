@@ -171,7 +171,7 @@ if __name__ == '__main__':
     ######### Refine arguments ############
     parser.add_argument('--n_trajs', type=int, default=300, help='''Number of refinement trajectories.''')
     parser.add_argument('--n_steps', type=int, default=30, help='''Number of moves per trajectory.''')
-    parser.add_argument('--move_set', type=str, default='GoodPairsMove(),BadPairsMove(),MissingPairsMove(),BoostMove()', help='''Moveset used during refinement:
+    parser.add_argument('--move_set', type=str, default='[GoodPairsMove(),BadPairsMove(),MissingPairsMove(),BoostMove()]', help='''Moveset used during refinement:
     GoodPairsMove(): re-pair two correctly paired bases
     BadPairsMove(): unpair two incorrectly paired bases
     MissingPairsMOve(): pair two bases that should be paired but are currently unpaired
@@ -230,7 +230,7 @@ if __name__ == '__main__':
         test(input_data, args.test_model, args.results_path, args.test_puzzle_name)
     elif args.mode == 'refine':
         os.system('mkdir refined')
-        move_set = [eval(i) for i in args.move_set.split(',')] 
+        move_set = eval(args.move_set)
         refine(input_data, args.results_path, args.n_trajs, args.n_steps, move_set, args.refine_puzzle_name)
     # Removing unnecessary files generated during run
     os.system('rm input rna.ps') 
