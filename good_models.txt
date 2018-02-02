@@ -1,6 +1,6 @@
 A list of models that can solve certain difficult puzzles from the Eterna100. The puzzle name, where the model is located, and the model name are listed.
-For each model, in the directory given, there is a "results" and "test" directory. To use the model, copy all items containing the model name from "results" and "test" 
-into a new "results" and "test" directory in /SentRNA, and then run "run.py" with "--mode test" and other appropriate arguments (see SentRNA/test_kyurem7.py for an example)
+For each model, in the directory given, there is a "results" and "test" directory. To use the model, copy all items containing the model name from "results" and "test"
+into a new "results" and "test" directory, and then use run.py" with "--mode test" and other appropriate arguments (see SentRNA/test_kyurem7.py for an example)
 
 Kyurem 7    models/trained_models/batch2    val_test_n_samples=2_force_add_features=False_threshold=2_shuffle=True_random_append=0_train_on_solved
 
