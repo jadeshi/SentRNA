@@ -27,13 +27,13 @@ To have SentRNA train a new model, supply the --mode train argument to SentRNA/r
 The training data supplied to SentRNA/run.py via the --input_data argument should be a .pkl of a list, where each element is also a list and contains information about a single puzzle solution in the following format:
 [puzzle name, dot-bracket structure, puzzle solution, locked bases].
 
-Example: ['Hairpin', '(((...)))', 'CCCAAAGGG', 'ooooooooo']
+Example: ['Hairpin', '(((....)))', 'CCCAAAAGGG', 'oooooooooo']
 
 Alternatively, you can also give it a text file, with each line having the above information, separated by commas and arbitrary whitespace:
 
-Example: Hairpin   ,    (((...)))   ,   CCCAAAGGG   ,   ooooooooo
+Example: Hairpin   ,    (((....)))   ,   CCCAAAAGGG   ,   oooooooooo
 
-If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is used in situations such as testing a trained model, when there is no puzzle solution and locked bases are ignored.
+If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is for situations such as testing a model on a puzzle with no locked bases.
 
 The dataset used previously to train all SentRNA models is a list of player solutions spanning all single-state Progression puzzles and several Lab puzzles. This is located in data/train/eterna_complete_ss.pkl. Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-3 for training, n-2 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
 
@@ -42,7 +42,13 @@ Any trained model is saved in the automatically generated "test" directory. The 
 ### 2. Testing
 To test a trained model, use --mode test, and any other relevant arguments. An example of a testing command is found on the second line of the test_pipeline.py file. This takes a trained model named "model" and has it predict solutions for all 100 puzzles in the Eterna100. 
 
-Once again, the puzzles to be tested should be passed via --input_data, in the same form as when training: a pkl of a list of lists of the form [puzzle name, dot-bracket, puzzle solution, locked bases]. A .pkl of all 100 Eterna100 puzzles is provided in data/test/eterna100.pkl as example test puzzles. However, if you want to test on other puzzles, it will likely be more convenient to supply a text file input, in which case you only need to list the puzzle name and dot bracket for each puzzle you want to test, one per line.
+Once again, the puzzles to be tested should be passed via --input_data, in the same form as when training: a pkl of a list of lists of the form [puzzle name, dot-bracket, puzzle solution, locked bases]. A .pkl of all 100 Eterna100 puzzles is provided in data/test/eterna100.pkl as example test puzzles.
+
+Note: in this mode, only bases corresponding to an 'x' in the locked bases string will be preserved from the player solution. All other positions will be assumed blank.
+
+Example: ['Hairpin', '(((....)))', 'CCCAAAAGGG', 'xxxooooooo'] will be seen by SentRNA as CCCnnnnnn in test mode, where 'n' corresponds to an unfilled base.
+
+You can also supply this information in text format, one puzzle per line, in the same format as you would training data. If you have a bunch of puzzles to test with no locked bases, you can just give the name and dot-bracket information.
 
 An example of a testing command is found on the second line of the test_pipeline.py file. This takes the trained model and has it predict solutions for all 100 puzzles in the Eterna100. Results will be stored in the automatically generated "test_results" directory.
 
