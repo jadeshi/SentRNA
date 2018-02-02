@@ -33,7 +33,7 @@ Alternatively, you can also give it a text file, with each line having the above
 
 Example: Hairpin   ,    (((....)))   ,   CCCAAAAGGG   ,   oooooooooo
 
-If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is for situations such as testing a model on a puzzle with no locked bases.
+If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is for situations such as testing a model on a puzzle with no locked bases (NOT RECOMMENDED for training since then you'd just be training on dummy solutions)
 
 The dataset used previously to train all SentRNA models is a list of player solutions spanning all single-state Progression puzzles and several Lab puzzles. This is located in data/train/eterna_complete_ss.pkl. Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-3 for training, n-2 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
 
