@@ -33,7 +33,7 @@ Alternatively, you can also give it a text file, with each line having the above
 
 Example: Hairpin   ,    (((...)))   ,   CCCAAAGGG   ,   ooooooooo
 
-If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is used in situations such as testing a trained model, when only the dot bracket of the test puzzle is needed.
+If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is used in situations such as testing a trained model, when there is no puzzle solution and locked bases are ignored.
 
 The dataset used previously to train all SentRNA models is a list of player solutions spanning all single-state Progression puzzles and several Lab puzzles. This is located in data/train/eterna_complete_ss.pkl. Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-3 for training, n-2 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
 
@@ -48,6 +48,11 @@ An example of a testing command is found on the second line of the test_pipeline
 
 ### 3. Refinement
 To refine an initial model prediction using adaptive walk, use --mode refine and any other relevant arguments. An example is found in the third line of SentRNA/test_pipeline.py. This performs 300 adapative walk trajectories of length 30 on all 100 Eterna100 puzzles.
+
+The data passed to --input_data should be the .pkl file generated via testing a model in the "test_results" directory. For each puzzle tested, this file has the following information:
+[puzzle name, dot-bracket, predicted solution, structural accuracy]
+
+where the structural accuracy is defined as the fraction of matching dot-bracket characters between the predicted and actual target structures. This number is only there to inform SentRNA of exact matches so that it doesn't need to refine the puzzle.
 
 #### Example refinement
 An example of a trained model and its performance on one of the Eterna100 puzzles, Kyurem 7, is included. To use, copy everything from the /SentRNA/kyurem7_trained directory into /SentRNA and run "test_kyurem7.py". The script will first predict an initial solution to Kyurem 7 using the trained model, followed by 100 rounds of refinement. The refinement efficacy outputted at the end represents the fraction of trials in which a valid solution to Kyurem 7 was sampled.
