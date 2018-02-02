@@ -4,7 +4,6 @@ import os
 import pickle
 from util.compute_mfe import *
 from util.draw_rna import *
-from util.feedforward import *
 from util.mutinf import *
 from util.refine_moves import *
 import argparse
@@ -59,12 +58,16 @@ def train(results_path, n_layers, hidden_size, nb_epochs, mini_epoch, MI_feature
 
 def test(dataset, model, results_path, puzzle_name):
     test_puzzles = [i[0] for i in dataset]
-    for i in os.listdir('test/%s'%(model)):
+    model_name = model[model.index('test') + 5:]
+    base_dir = model[:model.index('test')][:-1]
+    if base_dir == '':
+        base_dir = '.'
+    for i in os.listdir(model):
         if '.data' in i:
             model_path = i[:i.index('.data')]
-            test_model_path = 'test/%s/%s'%(model, model_path)
-    MI_features_list = pickle.load(open('results/MI_features_list.%s.pkl'%(model)))
-    layer_sizes = pickle.load(open('results/layer_sizes.%s.pkl'%(model)))
+            test_model_path = '%s/%s'%(model, model_path)
+    MI_features_list = pickle.load(open('%s/results/MI_features_list.%s.pkl'%(base_dir, model_name)))
+    layer_sizes = pickle.load(open('%s/results/layer_sizes.%s.pkl'%(base_dir, model_name)))
     model = TensorflowClassifierModel(layer_sizes=layer_sizes)
     output = []
     debug = []
@@ -178,8 +181,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.renderer == 'rnaplot':
         from util.featurize_util import *
+        from util.feedforward import *
     else:
         from util.featurize_util2 import *
+        from util.feedforward2 import *
     if '.pkl' in args.input_data:
         input_data = pickle.load(open(args.input_data))
     else:

@@ -233,7 +233,7 @@ def generate_MI_features_list(progression, puzzle_name, threshold, force_add_fea
     return MI_features_list
 
 
-def mutual_information_features(coords, pairs, index, seq, MI_features_list, tolerance=0.1):
+def mutual_information_features(coords, pairs, index, seq, MI_features_list, tolerance=1e-5):
     all_distances = np.array([round(compute_distance(coords[i], coords[index]), 1) for i in range(len(coords))])
     all_angles = np.array([round(compute_angle([coords[index - 1], coords[index], coords[i]]), 1) for i in range(len(coords))])
     MI_feature_vector = np.array([])
