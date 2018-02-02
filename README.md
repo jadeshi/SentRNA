@@ -49,5 +49,5 @@ An example of a testing command is found on the second line of the test_pipeline
 ### 3. Refinement
 To refine an initial model prediction using adaptive walk, use --mode refine and any other relevant arguments. An example is found in the third line of SentRNA/test_pipeline.py. This performs 300 adapative walk trajectories of length 30 on all 100 Eterna100 puzzles.
 
-## Example refinement
+#### Example refinement
 An example of a trained model and its performance on one of the Eterna100 puzzles, Kyurem 7, is included. To use, copy everything from the /SentRNA/kyurem7_trained directory into /SentRNA and run "test_kyurem7.py". The script will first predict an initial solution to Kyurem 7 using the trained model, followed by 100 rounds of refinement. The refinement efficacy outputted at the end represents the fraction of trials in which a valid solution to Kyurem 7 was sampled.
