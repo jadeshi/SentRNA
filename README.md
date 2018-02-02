@@ -63,5 +63,16 @@ The data passed to --input_data should be the .pkl file generated via testing a 
 
 where the structural accuracy is defined as the fraction of matching dot-bracket characters between the predicted and actual target structures. This number is only there to inform SentRNA of exact matches so that it doesn't need to refine the puzzle.
 
+The moveset used for refinement is currently a combination of 4 different moves:
+1. GoodPairsMove(): Re-pairs two bases that are supposed to be and are currently paired by mutating to GC/CG, AU/UA, or GU/UG
+2. BadPairsMove(): Unapirs two bases that are not supposed to be paired by mutating to any non-pairing base combination
+3. MissingPairsMove(): Pairs two bases that are supposed to be paired but are currently unpaired by mutating to GC/CG, AU/UA, or GU/UG
+4. BoostMove(): Applies a G or a U-U boost.
+
+You can modify the moveset used during the refinement by supplying the --move_set argument. 
+For example:
+
+--move_set "[GoodPairsMove([['G', 'C'], ['C', 'G']])]" will only re-pair currently paired bases using only GC/CG mutations.
+ 
 #### Example test + refinement pipeline
 An example of a trained model and its performance on one of the Eterna100 puzzles, Kyurem 7, is included. Simply run SentRNA/test_kyurem7.py. The script will first predict an initial solution to Kyurem 7 using the trained model, followed by 100 rounds of refinement. The refinement efficacy outputted at the end represents the fraction of trials in which a valid solution to Kyurem 7 was sampled.
