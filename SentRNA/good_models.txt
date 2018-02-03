@@ -1,5 +1,5 @@
-A list of models that can solve certain difficult puzzles from the Eterna100. The puzzle name, where the model is located, and the model name are listed.
-To use the model, simply supply the given directory path to the --test_model argument when running SentRNA/run.py, and also use --mode test. 
+A list of models that can solve certain difficult puzzles from the Eterna100. The puzzle name and corresponding model location are given.
+To use a model, simply supply the given directory path to the --test_model argument when running SentRNA/run.py, and also use --mode test. 
 See test_kyurem7.py for an example.
 
 NOTE: If you want to try out the models for Mat - Lot 2-2 B or Mutated chicken feet, make sure to also supply the --renderer eterna argument.
