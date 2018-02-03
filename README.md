@@ -35,7 +35,11 @@ Example: Hairpin   ,    (((....)))   ,   CCCAAAAGGG   ,   oooooooooo
 
 If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is for situations such as testing a model on a puzzle with no locked bases (NOT RECOMMENDED for training since then you'd just be training on dummy solutions)
 
-The dataset used previously to train all SentRNA models is a list of player solutions spanning all single-state Progression puzzles and several Lab puzzles. This is located in data/train/eterna_complete_ss.pkl. Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-3 for training, n-2 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
+Before using the data for training, SentRNA first processes it to create a list of unique puzzle names, as well as a dictionary giving the number of player solutions available for each puzzle. These are used during the long-range feature calculation before training. Alternatively, you can create these yourself and save them as .pkl files, and then directly pass them as additional arguments to --puzzle_names and --puzzle_solution_count.
+
+A sample dataset is provided in data/train, and is a compiled list of ~18000 solutions across 724 unique puzzles, spanning all single-state Progression puzzles and several Lab puzzles, and is called eterna_complete_ss.pkl. There is also an accompanying puzzle names file and puzzle solution count file. 
+
+Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-3 for training, n-2 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
 
 Any trained model is saved in the automatically generated "test" directory. The layer sizes of the prediction neural network, along with the long-range features used in the model and the results of initial validation and testing can be found in the automatically generated "results" directory.
 
