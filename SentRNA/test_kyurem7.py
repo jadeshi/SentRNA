@@ -7,7 +7,7 @@ renderer = 'rnaplot'
 os.system("python run.py --mode test --renderer %s --input_data ../data/test/eterna100.pkl --test_model %s --results_path out.pkl --test_puzzle_name '%s'"%(renderer, path, puzzle_name))
 
 for i in range(100):
-    os.system("python run.py --mode refine --input_data test_results/out.pkl --results_path refined.pkl --refine_puzzle_name 'Kyurem 7'")
+    os.system("python run.py --mode refine --input_data test_results/out.pkl --results_path refined_%d.pkl --refine_puzzle_name 'Kyurem 7'"%(i))
 
 eff = 0
 for i in os.listdir('refined'):
