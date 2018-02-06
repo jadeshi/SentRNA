@@ -15,6 +15,8 @@ included). Add the following directory paths to your $PATH environment variable:
 1. /SentRNA/util/ViennaRNA-1.8.5/Progs (for RNAfold)
 2. /SentRNA/util/ViennaRNA-1.8.5/Progs/rnaplot (for RNAplot)
 
+Note: Vienna 1.8.5 requires glibc v2.14, which can be found here: http://ftp.gnu.org/gnu/glibc
+
 ## Benchmarks
 Eterna100 (http://www.eternagame.org/web/blog/6136054/)
 
