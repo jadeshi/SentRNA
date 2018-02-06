@@ -4,7 +4,7 @@ See test_kyurem7.py for an example.
 
 NOTE: If you want to try out the models for Mat - Lot 2-2 B or Mutated chicken feet, make sure to also supply the --renderer eterna argument.
 
-Kyurem 7    ../models/trained_models/batch2/test/val_test_n_samples=2_force_add_features=False_threshold=2_shuffle=True_random_append=0_train_on_solved
+Kyurem 7    ../models/trained_models/batch1/test/trial-9_MI-27
 
 Kyurem 5    ../models/trained_models/batch2/test/val_test_n_samples=2_force_add_features=False_threshold=2_shuffle=True_random_append=0_train_on_solved
 
