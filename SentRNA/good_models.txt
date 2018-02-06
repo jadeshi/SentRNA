@@ -1,21 +1,69 @@
-A list of models that can solve certain difficult puzzles from the Eterna100. The puzzle name and corresponding model location are given.
-To use a model, simply supply the given directory path to the --test_model argument when running run.py, and also use --mode test. 
-See test_kyurem7.py for an example.
+A list of models that can solve certain difficult puzzles from the Eterna100. The puzzle name and corresponding initial prediction and refinement parameters are given.
+To use each model, replace the parameters listed here with those in test_trained_model.py
 
-NOTE: If you want to try out the models for Mat - Lot 2-2 B or Mutated chicken feet, make sure to also supply the --renderer eterna argument.
 
-Kyurem 7    ../models/trained_models/batch1/test/trial-9_MI-27
+Kyurem 7    
+path = '../models/trained_models/batch1/test/trial-9_MI-27'
+puzzle_name = 'Kyurem 7'
+renderer = 'rnaplot'
+moveset = "[GoodPairsMove(), MissingPairsMove()]"
+n_trajs = 300
 
-Kyurem 5    ../models/trained_models/batch2/test/val_test_n_samples=2_force_add_features=False_threshold=2_shuffle=True_random_append=0_train_on_solved
 
-"1,2,3and4bulges"    ../models/trained_models/batch1/test/trial-14_MI-20
+Kyurem 5    
+path = '../models/trained_models/batch2/test/val_test_n_samples=2_force_add_features=False_threshold=2_shuffle=True_random_append=0_train_on_solved'
+puzzle_name = 'Kyurem 7'
+renderer = 'rnaplot'
+moveset = "[GoodPairsMove(), MissingPairsMove()]"
+n_trajs = 300
 
-Loop next to a Multiloop    ../models/trained_models/batch1/test/trial-1_MI-26
 
-Crop circle 2    ../models/trained_models/batch2/test/val_test_n_samples=8_force_add_features=False_threshold=2_shuffle=False_random_append=0_train_on_solved
+"1,2,3and4bulges"
+path = '../models/trained_models/batch1/test/trial-14_MI-20'
+puzzle_name = '"1,2,3and4bulges"'
+renderer = 'rnaplot'
+moveset = "[GoodPairsMove(), MissingPairsMove()]"
+n_trajs = 300
 
-Mat - Lot 2-2 B    ../models/trained_models/matlot/test/MI-54_trial4
 
-hard Y    ../models/trained_models/batch1/test/trial-16_MI-22
+Loop next to a Multiloop
+path = '../models/trained_models/batch1/test/trial-1_MI-26'
+puzzle_name = 'Loop next to a Multiloop'
+renderer = 'rnaplot'
+moveset = "[GoodPairsMove(), MissingPairsMove(), BadPairsMove(), BoostMove()]"
+n_trajs = 300
 
-Mutated chicken feet    ../models/trained_models/mcf/test/3loop_7
+
+Crop circle 2    
+path = '../models/trained_models/batch2/test/val_test_n_samples=8_force_add_features=False_threshold=2_shuffle=False_random_append=0_train_on_solved'
+puzzle_name = 'Crop circle 2'
+renderer = 'rnaplot'
+moveset = "[GoodPairsMove([['G', 'C'], ['C', 'G']]), MissingPairsMove([['G', 'C'], ['C', 'G']]), BoostMove()]"
+n_trajs = 10000
+
+
+Mat - Lot 2-2 B
+path = '../models/trained_models/matlot/test/MI-54_trial4'
+puzzle_name = 'Mat - Lot 2-2 B'
+renderer = 'eterna'
+moveset = "[GoodPairsMove([['G', 'C'], ['C', 'G']]), MissingPairsMove([['G', 'C'], ['C', 'G']])]"
+n_trajs = 300
+
+
+hard Y 
+path = '../models/trained_models/batch1/test/trial-16_MI-22'
+puzzle_name = 'hard Y'
+renderer = 'rnaplot'
+moveset = "[GoodPairsMove(), MissingPairsMove(), BadPairsMove(), BoostMove()]"
+n_trajs = 300
+
+
+Mutated chicken feet
+path = '../models/trained_models/mcf/test/3loop_7'
+puzzle_name = 'Mutated chicken feet'
+renderer = 'eterna'
+moveset = "[GoodPairsMove([['G', 'C'], ['C', 'G']]), MissingPairsMove([['G', 'C'], ['C', 'G']])]"
+n_trajs = 300
+
+
+
