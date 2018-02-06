@@ -12,7 +12,7 @@ n_trajs = 300
 
 Kyurem 5    
 path = '../models/trained_models/batch2/test/val_test_n_samples=2_force_add_features=False_threshold=2_shuffle=True_random_append=0_train_on_solved'
-puzzle_name = 'Kyurem 7'
+puzzle_name = 'Kyurem 5'
 renderer = 'rnaplot'
 moveset = "[GoodPairsMove(), MissingPairsMove()]"
 n_trajs = 300
