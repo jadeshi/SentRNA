@@ -56,7 +56,7 @@ Example: ['Hairpin', '(((....)))', 'CCCAAAAGGG', 'xxxooooooo'] will be seen by S
 
 You can also supply this information in text format, one puzzle per line, in the same format as you would training data. If you have a bunch of puzzles to test with no locked bases, you can just give the name and dot-bracket information.
 
-A set of pre-trained models are also included in data/models/trained_models that you can also try out. To use one of these models, set the --test_model argument to the directory containing the model (see SentRNA/test_kyurem7.py for an example)
+A set of pre-trained models are also included in data/models/trained_models that you can also try out. To use one of these models, set the --test_model argument to the directory containing the model (see SentRNA/test_trained_model.py for an example)
 
 Results will be stored in the automatically generated "test_results" directory.
 
