@@ -210,8 +210,12 @@ def generate_MI_features_list(progression, puzzle_name, threshold, force_add_fea
             dot_bracket = puzzle[-3]
             solution = puzzle[-2]
             solutions.append(solution)
+    if random_append != 0:
+        ignore_indices = ignore_bases(solutions)
+    else:
+        ignore_indices = []
     solutions += generate_random_dataset(len(dot_bracket), random_append)
-    MI = mutual_information_matrix(solutions)
+    MI = mutual_information_matrix(solutions, ignore_indices)
     coords, pairs = draw_structure(dot_bracket)
     counter = 0
     while counter < threshold:

@@ -54,12 +54,13 @@ def positional_mutual_information(index, data):
         MIs[position] = MI
     return MIs
 
-def mutual_information_matrix(data):
+def mutual_information_matrix(data, ignore_indices):
     MIs = []
-    ignore_indices = ignore_bases(data)
     for index in range(len(data[0])):
         MIs.append(positional_mutual_information(index, data))
     MIs = np.array(MIs)
-    MIs[:,ignore_indices] = 0
-    MIs[ignore_indices,:] = 0
+    print ignore_indices
+    if ignore_indices != []:
+        MIs[:,ignore_indices] = 0
+        MIs[ignore_indices,:] = 0
     return MIs
