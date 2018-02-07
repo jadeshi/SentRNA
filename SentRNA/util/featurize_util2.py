@@ -21,7 +21,7 @@ def load_txt(filename):
     data = open(filename).read().splitlines()
     output = []
     for i in data:
-        puzzle_info = [j.strip() for j in i.split(',')]
+        puzzle_info = [j.strip() for j in i.split('    ')]
         if len(puzzle_info) == 2:
             puzzle_info += ['A' * len(puzzle_info[-1]), 'o' * len(puzzle_info[-1])]
         output.append(puzzle_info)

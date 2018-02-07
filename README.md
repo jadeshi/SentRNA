@@ -31,9 +31,9 @@ The training data supplied to SentRNA/run.py via the --input_data argument shoul
 
 Example: ['Hairpin', '(((....)))', 'CCCAAAAGGG', 'oooooooooo']
 
-Alternatively, you can also give it a text file, with each line having the above information, separated by commas and arbitrary whitespace:
+Alternatively, you can also give it a text file, with each line having the above information, with each element separated by at least 4 spaces:
 
-Example: Hairpin   ,    (((....)))   ,   CCCAAAAGGG   ,   oooooooooo
+Example: Hairpin    (((....)))    CCCAAAAGGG    oooooooooo
 
 If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is for situations such as testing a model on a puzzle with no locked bases (NOT RECOMMENDED for training since then you'd just be training on dummy solutions)
 
