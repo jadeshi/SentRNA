@@ -41,7 +41,7 @@ Before using the data for training, SentRNA first processes it to create a list 
 
 A sample dataset is provided in data/train, and is a compiled list of ~18000 solutions across 724 unique puzzles, spanning all single-state Progression puzzles and several Lab puzzles, and is called eterna_complete_ss.pkl. There is also an accompanying puzzle names file and puzzle solution count file. 
 
-Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-3 for training, n-2 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
+Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-2 for training, n-1 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
 
 Any trained model is saved in the automatically generated "test" directory. The layer sizes of the prediction neural network, along with the long-range features used in the model and the results of initial validation and testing can be found in the automatically generated "results" directory.
 

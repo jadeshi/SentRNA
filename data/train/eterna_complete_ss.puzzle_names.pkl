@@ -1443,8 +1443,6 @@ aS'"TR1B1 - Shape 1"'
 p721
 aS'"TR1B1 - Shape 3"'
 p722
-aS'"MS2 control ON"'
-p723
 aS'"Anaylysis of Potato Spindle Tuber Viroid - Shape 0"'
-p724
+p723
 a.

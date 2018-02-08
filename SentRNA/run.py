@@ -207,8 +207,8 @@ if __name__ == '__main__':
                     puzzle_solution_count[i[0]] += 1
         else:
             puzzle_solution_count = pickle.load(open(args.puzzle_solution_count))
-        train_puzzles = unique_puzzles[:-3]
-        val_puzzle = unique_puzzles[-3] # The second to last puzzle is unstructured and useless for validation, use the third to last instead
+        train_puzzles = unique_puzzles[:-2]
+        val_puzzle = unique_puzzles[-2] 
         test_puzzle = unique_puzzles[-1]
         to_train_on = random.sample(range(len(train_puzzles)), args.n_train_puzzles)
         train_puzzles = [train_puzzles[i] for i in to_train_on]  
