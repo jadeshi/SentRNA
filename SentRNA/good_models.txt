@@ -8,6 +8,7 @@ puzzle_name = 'Kyurem 7'
 renderer = 'rnaplot'
 moveset = "[GoodPairsMove(), MissingPairsMove()]"
 n_trajs = 300
+MI_tolerance = 0.1
 
 
 Kyurem 5    
@@ -16,6 +17,7 @@ puzzle_name = 'Kyurem 5'
 renderer = 'rnaplot'
 moveset = "[GoodPairsMove(), MissingPairsMove()]"
 n_trajs = 300
+MI_tolerance = 0.1
 
 
 "1,2,3and4bulges"
@@ -24,6 +26,7 @@ puzzle_name = '"1,2,3and4bulges"'
 renderer = 'rnaplot'
 moveset = "[GoodPairsMove(), MissingPairsMove()]"
 n_trajs = 300
+MI_tolerance = 0.1
 
 
 Loop next to a Multiloop
@@ -32,6 +35,7 @@ puzzle_name = 'Loop next to a Multiloop'
 renderer = 'rnaplot'
 moveset = "[GoodPairsMove(), MissingPairsMove(), BadPairsMove(), BoostMove()]"
 n_trajs = 300
+MI_tolerance = 0.1
 
 
 Crop circle 2    
@@ -40,6 +44,7 @@ puzzle_name = 'Crop circle 2'
 renderer = 'rnaplot'
 moveset = "[GoodPairsMove([['G', 'C'], ['C', 'G']]), MissingPairsMove([['G', 'C'], ['C', 'G']]), BoostMove()]"
 n_trajs = 10000
+MI_tolerance = 0.1
 
 
 Mat - Lot 2-2 B
@@ -48,7 +53,7 @@ puzzle_name = 'Mat - Lot 2-2 B'
 renderer = 'eterna'
 moveset = "[GoodPairsMove([['G', 'C'], ['C', 'G']]), MissingPairsMove([['G', 'C'], ['C', 'G']])]"
 n_trajs = 300
-
+MI_tolerance = 1e-5
 
 hard Y 
 path = '../models/trained_models/batch1/test/trial-16_MI-22'
@@ -56,6 +61,7 @@ puzzle_name = 'hard Y'
 renderer = 'rnaplot'
 moveset = "[GoodPairsMove(), MissingPairsMove(), BadPairsMove(), BoostMove()]"
 n_trajs = 300
+MI_tolerance = 0.1
 
 
 Mutated chicken feet
@@ -64,6 +70,6 @@ puzzle_name = 'Mutated chicken feet'
 renderer = 'eterna'
 moveset = "[GoodPairsMove([['G', 'C'], ['C', 'G']]), MissingPairsMove([['G', 'C'], ['C', 'G']])]"
 n_trajs = 300
-
+MI_tolerance = 1e-5
 
 
