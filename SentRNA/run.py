@@ -7,8 +7,10 @@ from util.draw_rna import *
 from util.mutinf import *
 from util.refine_moves import *
 import argparse
+from util.featurize_util import *
+from util.feedforward import *
 
-def train(results_path, n_layers, hidden_size, nb_epochs, mini_epoch, MI_features_list, nn_training_dataset, val_dataset, test_dataset):
+def train(results_path, n_layers, hidden_size, nb_epochs, mini_epoch, MI_features_list, nn_training_dataset, val_dataset, test_dataset, MI_tolerance, renderer):
     # Model params
     input_size = len(nn_training_dataset[0][0])
     layer_sizes = [input_size] + [hidden_size] * n_layers + [4]
@@ -29,9 +31,11 @@ def train(results_path, n_layers, hidden_size, nb_epochs, mini_epoch, MI_feature
         model.fit(nn_training_dataset, loss_thresh=1e-9, nb_epochs=mini_epoch, save_path=save_path, checkpoint=checkpoint)
         # Validation
         dot_bracket, seq, fixed_bases = val_dataset
-        val_solution, val_input = model.evaluate(dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, val_model)
+        val_solution, val_input = model.evaluate(dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, val_model, refine=False, MI_tolerance=MI_tolerance, \
+                                                 renderer=renderer)
         val_accuracy = check_answer(val_solution, dot_bracket)
-        val_solution2, val_input2 = model.evaluate(dot_bracket, val_solution, fixed_bases, layer_sizes, MI_features_list, val_model, refine=True)
+        val_solution2, val_input2 = model.evaluate(dot_bracket, val_solution, fixed_bases, layer_sizes, MI_features_list, val_model, refine=True, \
+                                                   MI_tolerance=MI_tolerance, renderer=renderer)
         val_accuracy2 = check_answer(val_solution2, dot_bracket)
         if val_accuracy2 > val_accuracy:
             val_accuracy = val_accuracy2
@@ -43,9 +47,11 @@ def train(results_path, n_layers, hidden_size, nb_epochs, mini_epoch, MI_feature
     # Testing
     test_model = 'test/%s_mini-epoch_%d.ckpt-%d'%(results_path, best_model, mini_epoch + 1)
     dot_bracket, seq, fixed_bases = test_dataset
-    test_solution, test_input = model.evaluate(dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, test_model)
+    test_solution, test_input = model.evaluate(dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, test_model, refine=False, MI_tolerance=MI_tolerance, \
+                                               renderer=renderer)
     test_accuracy = check_answer(test_solution, dot_bracket)
-    test_solution2, test_input2 = model.evaluate(dot_bracket, test_solution, fixed_bases, layer_sizes, MI_features_list, test_model, refine=True)
+    test_solution2, test_input2 = model.evaluate(dot_bracket, test_solution, fixed_bases, layer_sizes, MI_features_list, test_model, refine=True, \
+                                                 MI_tolerance=MI_tolerance, renderer=renderer)
     test_accuracy2 = check_answer(test_solution2, dot_bracket)
     if test_accuracy2 > test_accuracy:
         test_solution = test_solution2
@@ -56,7 +62,7 @@ def train(results_path, n_layers, hidden_size, nb_epochs, mini_epoch, MI_feature
     return 0
 
 
-def test(dataset, model, results_path, puzzle_name):
+def test(dataset, model, results_path, puzzle_name, MI_tolerance, renderer):
     test_puzzles = [i[0] for i in dataset]
     model_name = model[model.index('test') + 5:]
     base_dir = model[:model.index('test')][:-1]
@@ -75,9 +81,11 @@ def test(dataset, model, results_path, puzzle_name):
         if puzzle_name != '-1' and puzzle != puzzle_name:
             continue
         dot_bracket, seq, fixed_bases = parse_progression_dataset(dataset, [puzzle], 1, MI_features_list, evaluate=True)
-        solution, _ = model.evaluate(dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, test_model_path)
+        solution, _ = model.evaluate(dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, test_model_path, refine=False, MI_tolerance=MI_tolerance, \
+                                     renderer=renderer)
         accuracy = check_answer(solution, dot_bracket)
-        solution2, _ = model.evaluate(dot_bracket, solution, fixed_bases, layer_sizes, MI_features_list, test_model_path)
+        solution2, _ = model.evaluate(dot_bracket, solution, fixed_bases, layer_sizes, MI_features_list, test_model_path, refine=True, MI_tolerance=MI_tolerance, \
+                                      renderer=renderer)
         accuracy2 = check_answer(solution2, dot_bracket)
         if accuracy2 > accuracy:
             accuracy = accuracy2
@@ -159,6 +167,7 @@ if __name__ == '__main__':
     strategy must be used to solve a puzzle, e.g. multiloop coordinated GC pair ordering, that result in identical solutions for the multiloop, 
     resulting in mutual information between all multiloop bases to be 0. By adding randomly generated solutions, we force recognition of correlation 
     between these bases and picking up of the multiloop features.''')
+    parser.add_argument('--MI_tolerance', type=float, default=0.1, help='''When training on a new puzzle using a set of long-range features, any feature found in the puzzle within this cutoff from a feature in the set will be registered as that feature.''')
     # Neural network params
     parser.add_argument('--n_layers', type=int, default=3, help='Number of hidden layers.')
     parser.add_argument('--hidden_size', type=int, default=100, help='Number of nodes in each hidden layer.')
@@ -179,12 +188,6 @@ if __name__ == '__main__':
     parser.add_argument('--refine_puzzle_name', type=str, default='-1', help='''Name of puzzle to refine. If not supplied, will refine 
     all puzzles in input_data.''')
     args = parser.parse_args()
-    if args.renderer == 'rnaplot':
-        from util.featurize_util import *
-        from util.feedforward import *
-    else:
-        from util.featurize_util2 import *
-        from util.feedforward2 import *
     if '.pkl' in args.input_data:
         input_data = pickle.load(open(args.input_data))
     else:
@@ -213,21 +216,22 @@ if __name__ == '__main__':
         to_train_on = random.sample(range(len(train_puzzles)), args.n_train_puzzles)
         train_puzzles = [train_puzzles[i] for i in to_train_on]  
         if args.long_range_input == '-1':
-            MI_features_master = compute_MI_features(input_data, unique_puzzles, puzzle_solution_count, args.n_min_solutions, args.features_per_puzzle, args.force_add_features, args.random_append)
+            MI_features_master = compute_MI_features(input_data, unique_puzzles, puzzle_solution_count, args.n_min_solutions, args.features_per_puzzle, args.force_add_features, args.random_append, args.renderer)
             pickle.dump(MI_features_master, open(args.long_range_output, 'w'))
         else:
             MI_features_master = pickle.load(open(args.long_range_input))
         np.random.shuffle(MI_features_master)
         MI_features_list = MI_features_master[:args.n_long_range_features]
-        inputs, labels, rewards = parse_progression_dataset(input_data, train_puzzles, args.n_solutions_per_puzzle, MI_features_list, evaluate=False, shuffle=args.stochastic_fill, train_on_solved=True)
+        inputs, labels, rewards = parse_progression_dataset(input_data, train_puzzles, args.n_solutions_per_puzzle, MI_features_list, evaluate=False, shuffle=args.stochastic_fill, train_on_solved=True, MI_tolerance=args.MI_tolerance, renderer=args.renderer)
         nn_training_dataset = [inputs, labels, rewards, None]
         val_dataset = parse_progression_dataset(input_data, [val_puzzle], 1, MI_features_list, evaluate=True)
         test_dataset = parse_progression_dataset(input_data, [test_puzzle], 1, MI_features_list, evaluate=True)
         input_size = len(nn_training_dataset[0][0])
-        train(args.results_path, args.n_layers, args.hidden_size, args.n_epochs, args.checkpoint_length, MI_features_list, nn_training_dataset, val_dataset, test_dataset)
+        train(args.results_path, args.n_layers, args.hidden_size, args.n_epochs, args.checkpoint_length, MI_features_list, nn_training_dataset, val_dataset, test_dataset, \
+              args.MI_tolerance, args.renderer)
     elif args.mode == 'test':
         os.system('mkdir test_results')
-        test(input_data, args.test_model, args.results_path, args.test_puzzle_name)
+        test(input_data, args.test_model, args.results_path, args.test_puzzle_name, args.MI_tolerance, args.renderer)
     elif args.mode == 'refine':
         os.system('mkdir refined')
         move_set = eval(args.move_set)

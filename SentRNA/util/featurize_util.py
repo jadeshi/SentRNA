@@ -139,21 +139,21 @@ def parse_ps(ps):
 # creates more faithful representations of some puzzles such as Mutated chicken feet and Mat - Lot 2-2 B
 
 # RNAplot
-def draw_structure(dot_bracket):
+def draw_structure_rnaplot(dot_bracket):
     generate_2d(dot_bracket)
     coords, pairs, _ = parse_ps('rna.ps')
     return coords, pairs
 
 # Eterna
-#def draw_structure(dot_bracket):
-#    coords, bonds = draw_rna.coords_as_list(dot_bracket)
-#    pairs = []
-#    for i in range(len(bonds)):
-#        if bonds[i] != -1:
-#            pair = [i, bonds[i]]
-#            if pair not in pairs and [bonds[i], i] not in pairs:
-#                pairs.append(pair)
-#    return coords, pairs
+def draw_structure_eterna(dot_bracket):
+    coords, bonds = draw_rna.coords_as_list(dot_bracket)
+    pairs = []
+    for i in range(len(bonds)):
+        if bonds[i] != -1:
+            pair = [i, bonds[i]]
+            if pair not in pairs and [bonds[i], i] not in pairs:
+                pairs.append(pair)
+    return coords, pairs
 
 def sample_without_replacement(arr):
     random.shuffle(arr)
@@ -202,7 +202,7 @@ def generate_random_dataset(length, n_solutions):
     return solutions
 
 
-def generate_MI_features_list(progression, puzzle_name, threshold, force_add_features=True, random_append=4, MI_features_list=[]):
+def generate_MI_features_list(progression, puzzle_name, threshold, force_add_features, random_append, MI_features_list, renderer):
     MI_features_list = deepcopy(MI_features_list)
     solutions = []
     for puzzle in progression:
@@ -216,7 +216,10 @@ def generate_MI_features_list(progression, puzzle_name, threshold, force_add_fea
         ignore_indices = []
     solutions += generate_random_dataset(len(dot_bracket), random_append)
     MI = mutual_information_matrix(solutions, ignore_indices)
-    coords, pairs = draw_structure(dot_bracket)
+    if renderer == 'rnaplot':
+        coords, pairs = draw_structure_rnaplot(dot_bracket)
+    else:
+        coords, pairs = draw_structure_eterna(dot_bracket)
     counter = 0
     while counter < threshold:
         if np.amax(MI) == 0:
@@ -237,7 +240,7 @@ def generate_MI_features_list(progression, puzzle_name, threshold, force_add_fea
     return MI_features_list
 
 
-def mutual_information_features(coords, pairs, index, seq, MI_features_list, tolerance=0.1):
+def mutual_information_features(coords, pairs, index, seq, MI_features_list, tolerance):
     all_distances = np.array([round(compute_distance(coords[i], coords[index]), 1) for i in range(len(coords))])
     all_angles = np.array([round(compute_angle([coords[index - 1], coords[index], coords[i]]), 1) for i in range(len(coords))])
     MI_feature_vector = np.array([])
@@ -253,24 +256,27 @@ def mutual_information_features(coords, pairs, index, seq, MI_features_list, tol
     return MI_feature_vector
 
 
-def featurize(coords, pairs, index, seq, MI_features_list):
+def featurize(coords, pairs, index, seq, MI_features_list, MI_tolerance):
     pair_comp = pair_features(coords, pairs, index, seq)
     nearest_neighbor_comp = nearest_neighbor_features(coords, index, seq)
-    mutual_information_comp = mutual_information_features(coords, pairs, index, seq, MI_features_list)
+    mutual_information_comp = mutual_information_features(coords, pairs, index, seq, MI_features_list, MI_tolerance)
     return np.concatenate((pair_comp, nearest_neighbor_comp, mutual_information_comp))
 
 
-def prepare_single_base_environment(dot_bracket, seq, index, MI_features_list):
+def prepare_single_base_environment(dot_bracket, seq, index, MI_features_list, MI_tolerance, renderer):
     """Generates local environment information for a single base position given a dot bracket and 
      sequence. Looping this function and passing the resulting data creates a dataset, which then,
      if passed to the NN evaluate function, simulates solving of a puzzle."""
-    positions, pairs = draw_structure(dot_bracket)
-    inputs = featurize(positions, pairs, index, seq, MI_features_list)
+    if renderer == 'rnaplot':
+        positions, pairs = draw_structure_rnaplot(dot_bracket)
+    else:
+        positions, pairs = draw_structure_eterna(dot_bracket)
+    inputs = featurize(positions, pairs, index, seq, MI_features_list, MI_tolerance)
     label = generate_label(seq[index])
     return inputs, label
 
 
-def prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=[None], shuffle=False, train_on_solved=False):
+def prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases, shuffle, train_on_solved, MI_tolerance, renderer):
   """Takes a puzzle with a known solution, adds one base at a time to the unsolved empty sequence, 
      and returns local environment information of bases during this process. This simulates a situation
      in which the puzzle is being gradually solved by an Eterna player. If fixed bases is supplied, those bases
@@ -295,13 +301,13 @@ def prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=[
     bases_to_edit = order[:i+1]
     for base in bases_to_edit:
       prior_solution = insert_base(prior_solution, solution[base], base)
-    inputs, label = prepare_single_base_environment(dot_bracket, prior_solution, order[i], MI_features_list)
+    inputs, label = prepare_single_base_environment(dot_bracket, prior_solution, order[i], MI_features_list, MI_tolerance, renderer)
     nn_inputs.append(inputs)
     nn_labels.append(label)
   return nn_inputs, nn_labels
 
 
-def parse_progression_dataset(progression, puzzles, n_samples, MI_features_list, evaluate=False, shuffle=False, train_on_solved=False, **kwargs):
+def parse_progression_dataset(progression, puzzles, n_samples, MI_features_list, evaluate, shuffle=None, train_on_solved=None, MI_tolerance=None, renderer=None, **kwargs):
   '''Parses an Eterna dataset "progression" (in proper .pkl format) for a particular puzzle and returns a training or validation dataset for that puzzle'''
   training_dataset = []
   training_labels = []
@@ -331,16 +337,20 @@ def parse_progression_dataset(progression, puzzles, n_samples, MI_features_list,
       if evaluate:
         return dot_bracket, solution, fixed_bases
       if len(fixed_bases) == 0:
-        nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=[None], shuffle=shuffle)
+        nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=[None], shuffle=shuffle, train_on_solved=False, \
+                                                     MI_tolerance=MI_tolerance, renderer=renderer)
       else:
-        nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases, shuffle=shuffle)
+        nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=fixed_bases, shuffle=shuffle, train_on_solved=False, \
+                                                     MI_tolerance=MI_tolerance, renderer=renderer)
       training_dataset += nn_inputs
       training_labels += nn_labels
       if train_on_solved:
         if len(fixed_bases) == 0:
-          nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=[None], shuffle=shuffle, train_on_solved=train_on_solved)
+          nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=[None], shuffle=shuffle, train_on_solved=train_on_solved, \
+                                                       MI_tolerance=MI_tolerance, renderer=renderer)
         else:
-          nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases, shuffle=shuffle, train_on_solved=train_on_solved)
+          nn_inputs, nn_labels = prepare_prior_dataset(dot_bracket, solution, MI_features_list, fixed_bases=fixed_bases, shuffle=shuffle, train_on_solved=train_on_solved, \
+                                                       MI_tolerance=MI_tolerance, renderer=renderer)
         training_dataset += nn_inputs
         training_labels += nn_labels
   rewards = np.ones(len(training_dataset))
@@ -365,10 +375,10 @@ def create_hyperparameter_set(hyperparameters):
         return create_hyperparameter_set([hyperparameters[0], create_hyperparameter_set(hyperparameters[1:])])
 
 
-def compute_MI_features(dataset, puzzle_names, puzzle_solution_count, min_n_solutions, features_per_puzzle, force_add_features, random_append):
+def compute_MI_features(dataset, puzzle_names, puzzle_solution_count, min_n_solutions, features_per_puzzle, force_add_features, random_append, renderer):
     MI_features_list = []
     for puzzle in puzzle_names:
         if puzzle_solution_count[puzzle] >= min_n_solutions:
             print 'Generating MI features for %s'%(puzzle)
-            MI_features_list = generate_MI_features_list(dataset, puzzle, features_per_puzzle, force_add_features, random_append, MI_features_list)
+            MI_features_list = generate_MI_features_list(dataset, puzzle, features_per_puzzle, force_add_features, random_append, MI_features_list, renderer)
     return MI_features_list

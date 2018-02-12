@@ -85,7 +85,7 @@ class TensorflowClassifierModel():
                 #    break
             saver.save(sess, os.path.join(self.logdir, save_path), global_step=epoch + 1)
 
-    def evaluate(self, dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, checkpoint, refine=False):
+    def evaluate(self, dot_bracket, seq, fixed_bases, layer_sizes, MI_features_list, checkpoint, refine, MI_tolerance, renderer, **kwargs):
         with self.graph.as_default():
             sess = tf.Session()
             sess.run(tf.global_variables_initializer())
@@ -101,7 +101,7 @@ class TensorflowClassifierModel():
             if refine:
                 to_solve = seq
             for i in open_positions:
-                inputs, label = prepare_single_base_environment(dot_bracket, to_solve, i, MI_features_list)
+                inputs, label = prepare_single_base_environment(dot_bracket, to_solve, i, MI_features_list, MI_tolerance, renderer)
                 rec.append(inputs)
                 X, y, w = [inputs], [label], [1]
                 output = sess.run(self.output, feed_dict = self.construct_feed_dict(X, y, w))[0]
