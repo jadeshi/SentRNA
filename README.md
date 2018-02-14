@@ -37,7 +37,7 @@ Example: Hairpin    (((....)))    CCCAAAAGGG    oooooooooo
 
 If you're using the text input format, you can also include just the name and the dot bracket. If you do this, the puzzle solution and locked bases parts will be set to placeholders (all A's and all o's respectively). This is for situations such as testing a model on a puzzle with no locked bases (NOT RECOMMENDED for training since then you'd just be training on dummy solutions)
 
-A sample dataset is provided in data/train, and is a compiled list of ~18000 solutions across 724 unique puzzles, spanning all single-state Progression puzzles and several Lab puzzles, and is called eterna_complete_ss.pkl. There is also an accompanying puzzle names file and puzzle solution count file. 
+A sample dataset is provided in data/train, and is a compiled list of ~18000 solutions across 723 unique puzzles, spanning all single-state Progression puzzles and several Lab puzzles, and is called eterna_complete_ss.pkl. A text version is also provided.
 
 Currently, given a dataset with n unique puzzles, SentRNA uses subsets of puzzles 1 to n-2 for training, n-1 for initial validation, and n for initial testing. Please keep this in mind if you want to train models using your own datasets.
 
@@ -46,7 +46,7 @@ Any trained model is saved in the automatically generated "test" directory. The 
 ### 2. Testing
 To test a trained model, use --mode test, and any other relevant arguments. An example of a testing command is found on the second line of the test_pipeline.py file. This takes a trained model named "model" and has it predict solutions for all 100 puzzles in the Eterna100. 
 
-Once again, the puzzles to be tested should be passed via --input_data, in the same form as when training: a pkl of a list of lists of the form [puzzle name, dot-bracket, puzzle solution, locked bases]. A .pkl of all 100 Eterna100 puzzles is provided in data/test/eterna100.pkl as example test puzzles.
+Once again, the puzzles to be tested should be passed via --input_data, in the same form as when training: a pkl of a list of lists of the form [puzzle name, dot-bracket, puzzle solution, locked bases]. A .pkl of all 100 Eterna100 puzzles is provided in data/test/eterna100.pkl as example test puzzles. A text version is also provided.
 
 Note: in this mode, only bases corresponding to an 'x' in the locked bases string will be preserved from the player solution. All other positions will be assumed blank.
 
