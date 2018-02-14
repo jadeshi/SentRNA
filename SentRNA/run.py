@@ -140,7 +140,6 @@ if __name__ == '__main__':
     parser.add_argument('--input_data', type=str)
     parser.add_argument('--results_path', type=str)
     ######## Train arguments ############
-    parser.add_argument('--puzzle_names', type=str, default='-1', help='A list of all puzzle names from the training data. If not supplied, will be generated.')
     parser.add_argument('--n_train_puzzles', type=int, default=50, help='How many puzzle to include in the training set.')
     parser.add_argument('--n_solutions_per_puzzle', type=int, default=1, help='How many player solutions per puzzle to use for training.')
     parser.add_argument('--stochastic_fill', type=bool, default=False, help='''When generating the solution trajectory from a player solution, either fill in the puzzle
@@ -150,9 +149,6 @@ if __name__ == '__main__':
     parser.add_argument('--long_range_input', type=str, default='-1', help='A .pkl file of long-range features to use instead of calculating them.')
     parser.add_argument('--n_long_range_features', type=int, default=0, help='How many long-range features to use as part of the input.')
     # if --long_range_input is supplied, the rest of these are not necessary.
-    parser.add_argument('--puzzle_solution_count', type=str, default='-1', help='''A dictionary with keys corresponding to puzzle names, and values corresponding to
-    the total number of player solutions for that puzzle in the dataset. Used to determine which puzzles will be used during the mutual information calculation to 
-    determine long range features.''')
     parser.add_argument('--n_min_solutions', type=int, default=50, help='''A puzzle must have at least this many solutions to be used in the mutual information
     calculation to determine long-range features. Prevents introduction of noise into the calculation when only few player solutions exist.''')
     parser.add_argument('--long_range_output', type=str, default='long_range_features.pkl', help='''What to name the .pkl file of long range features 
@@ -194,22 +190,18 @@ if __name__ == '__main__':
         input_data = load_txt(args.input_data)
     if args.mode == 'train':
         os.system('mkdir results test test/%s'%(args.results_path))
-        if args.puzzle_names == '-1':
-            unique_puzzles = []
-            for i in input_data:
-                if i[0] not in unique_puzzles:
-                    unique_puzzles.append(i)
-        else:
-            unique_puzzles = pickle.load(open(args.puzzle_names))
-        if args.puzzle_solution_count == '-1':
-            puzzle_solution_count = {}
-            for i in input_data:
-                if i[0] not in puzzle_solution_count.keys():
-                    puzzle_solution_count[i[0]] = 1
-                elif i[0] not in long_range_puzzles:
-                    puzzle_solution_count[i[0]] += 1
-        else:
-            puzzle_solution_count = pickle.load(open(args.puzzle_solution_count))
+        unique_puzzles = []
+        # Create a list of unique puzzle names
+        for i in input_data:
+            if i[0] not in unique_puzzles:
+                unique_puzzles.append(i[0])
+        # Create a dictionary of number of solutions per puzzle
+        puzzle_solution_count = {}
+        for i in input_data:
+            if i[0] not in puzzle_solution_count.keys():
+                puzzle_solution_count[i[0]] = 1
+            else:
+                puzzle_solution_count[i[0]] += 1
         train_puzzles = unique_puzzles[:-2]
         val_puzzle = unique_puzzles[-2] 
         test_puzzle = unique_puzzles[-1]
