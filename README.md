@@ -11,9 +11,9 @@ Python: tensorflow, numpy, pickle
 
 ViennaRNA (https://www.tbi.univie.ac.at/RNA/):
 This program uses the RNAfold function from ViennaRNA 1.8.5, and the more updated RNAplot function from ViennaRNA 2.3.3 (both
-included). Add the following directory paths to your $PATH environment variable:
-1. /SentRNA/util/ViennaRNA-1.8.5/Progs (for RNAfold)
-2. /SentRNA/util/ViennaRNA-1.8.5/Progs/rnaplot (for RNAplot)
+included). Add the following directory paths to your $PATH environment variable, substituting whatever directory you cloned SentRNA into for "clone_dir".
+1. clone_dir/SentRNA/util/ViennaRNA-1.8.5/Progs (for RNAfold)
+2. clone_dir/SentRNA/util/ViennaRNA-1.8.5/Progs/rnaplot (for RNAplot)
 
 Note: Vienna 1.8.5 requires glibc v2.14, which can be found here: http://ftp.gnu.org/gnu/glibc
 
