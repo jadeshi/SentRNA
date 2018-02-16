@@ -10,6 +10,7 @@ import argparse
 from util.featurize_util import *
 from util.feedforward import *
 
+
 def train(results_path, n_layers, hidden_size, nb_epochs, mini_epoch, MI_features_list, nn_training_dataset, val_dataset, test_dataset, MI_tolerance, renderer):
     # Model params
     input_size = len(nn_training_dataset[0][0])
@@ -135,7 +136,7 @@ def refine(dataset, output_path, n_trajs, n_steps, move_set, puzzle_name):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser('')
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter, argument_default=argparse.SUPPRESS)
     parser.add_argument('--mode', type=str, default='train', help='Either "train", "test", or "refine"')
     parser.add_argument('--input_data', type=str)
     parser.add_argument('--results_path', type=str)
@@ -177,10 +178,10 @@ if __name__ == '__main__':
     parser.add_argument('--n_trajs', type=int, default=300, help='''Number of refinement trajectories.''')
     parser.add_argument('--n_steps', type=int, default=30, help='''Number of moves per trajectory.''')
     parser.add_argument('--move_set', type=str, default='[GoodPairsMove(),BadPairsMove(),MissingPairsMove(),BoostMove()]', help='''Moveset used during refinement:
-    GoodPairsMove(): re-pair two correctly paired bases
-    BadPairsMove(): unpair two incorrectly paired bases
-    MissingPairsMOve(): pair two bases that should be paired but are currently unpaired
-    BoostMove(): boost using G or U-U boosts.''')
+    1) GoodPairsMove(): re-pair two correctly paired bases   
+    2) BadPairsMove(): unpair two incorrectly paired bases
+    3) MissingPairsMove(): pair two bases that should be paired but are currently unpaired
+    4) BoostMove(): boost using G or U-U boosts.''')
     parser.add_argument('--refine_puzzle_name', type=str, default='-1', help='''Name of puzzle to refine. If not supplied, will refine 
     all puzzles in input_data.''')
     args = parser.parse_args()
